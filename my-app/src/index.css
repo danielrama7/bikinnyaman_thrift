@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url(./font/Manrope.ttf) format("opentype");
+}
