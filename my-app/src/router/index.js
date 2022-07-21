@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LayoutUser from "../components/Layout";
 import Informasi_Akun from "../pages/Informasi_Akun";
 import Informasi_Akun1 from "../pages/Informasi_Akun/Informasi_Akun1";
@@ -11,6 +11,7 @@ function router() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate replace to="/homePage" />} />
         <Route path="/" element={<LayoutUser />}>
           {routes.map((route, index) => (
             <Route
