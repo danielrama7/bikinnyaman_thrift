@@ -12,8 +12,8 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 right-0 left-0 z-10 bg-white">
-      <nav class="flex items-center justify-between flex-wrap shadow-md py-2 lg:px-12 border-solid border-t-2 border-blue-700">
+    <div className="sticky top-0 z-10 bg-white">
+      <nav class="flex items-center justify-between flex-wrap shadow-md py-2 lg:px-12 border-transparent border-t-2">
         <div class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
           <NavLink to="/homePage">
             <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
