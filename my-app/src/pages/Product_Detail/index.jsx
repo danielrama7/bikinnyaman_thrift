@@ -1,10 +1,21 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { NavLink } from "react-router-dom";
 import product1 from "../../img/product1.jpg";
 import product2 from "../../img/product1.1.jpg";
 import product3 from "../../img/product1.2.jpg";
 import product4 from "../../img/product1.3.jpg";
+import product5 from "../../img/product1.4.jpg";
+import product6 from "../../img/product1.5.jpg";
 
-const miniImg = [product1, product2, product3, product4];
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./style.css";
+
+import { Navigation } from "swiper";
+
+const miniImg = [product1, product2, product3, product4, product5, product6];
 function Product_Detail() {
   const [activeImg, setActiveImg] = useState(product1);
 
@@ -19,7 +30,7 @@ function Product_Detail() {
           Detail Produk
         </h1>
       </div>
-      <div className="mx-20 mt-12 p-3">
+      <div className="mx-20 py-16 p-3">
         <div className="flex bg-white p-8">
           <div className="w-2/5 h-[525px] pr-8">
             <img
@@ -53,7 +64,23 @@ function Product_Detail() {
               <button className="h-8 w-8 bg-White">M</button>
               <button className="h-8 w-8 bg-White">L</button>
             </div>
-            <div className="flex w-full justify-between">
+            <div className="flex justify-between mb-5">
+              <div className="w-full pr-4">
+                <NavLink to="/keranjangBelanja" className="w-full">
+                  <button className="font-bold hover:text-white p-2 border-2 rounded w-full hover:bg-[#d0cba0] hover:border-transparent duration-500">
+                    Tambahkan ke Keranjang
+                  </button>
+                </NavLink>
+              </div>
+              <div className="w-full">
+                <NavLink to="/wishlist" className="w-full">
+                  <button className="font-bold hover:text-white p-2 border-2 rounded w-full hover:bg-[#d0cba0] hover:border-transparent duration-500">
+                    Tambahkan ke Wishlist
+                  </button>
+                </NavLink>
+              </div>
+            </div>
+            {/* <div className="flex w-full justify-between">
               <button className="h-40 w-8 mr-4 bg-[#F6F6F6]">&lt;</button>
               <div className="flex w-full justify-between">
                 {miniImg.map((img, i) => (
@@ -71,6 +98,31 @@ function Product_Detail() {
                 ))}
               </div>
               <button className="h-40 w-8 bg-[#F6F6F6] ml-4">&gt;</button>
+            </div> */}
+            <div>
+              <Swiper
+                slidesPerView={4}
+                spaceBetween={-30}
+                navigation={true}
+                modules={[Navigation]}
+                className="mySwiper"
+              >
+                {miniImg.map((img, i) => (
+                  <SwiperSlide>
+                    <div
+                      key={i}
+                      className="h-40 w-32"
+                      onClick={() => handlerImg(img)}
+                    >
+                      <img
+                        src={img}
+                        alt=""
+                        className="object-cover h-full w-full"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>
