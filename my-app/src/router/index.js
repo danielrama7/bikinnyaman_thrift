@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LayoutUser from "../components/Layout";
+import ScrollToTop from "../components/ScrollToTop";
 import Informasi_Akun from "../pages/Informasi_Akun";
 import Informasi_Akun1 from "../pages/Informasi_Akun/Informasi_Akun1";
 import Riwayat_Pembelian from "../pages/Informasi_Akun/Riwayat_Pembelian";
@@ -17,6 +18,7 @@ import { routes } from "./routes";
 function router() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate replace to="/homePage" />} />
         <Route path="/" element={<LayoutUser />}>

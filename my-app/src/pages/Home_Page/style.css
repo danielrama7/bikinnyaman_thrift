@@ -13,6 +13,11 @@
   width: 100%;
 }
 
+.sectionThumbnail {
+  height: 528px;
+  width: 100%;
+}
+
 .swiper-button-next {
   display: flex;
   align-items: center;
@@ -61,4 +66,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d0cba0 !important;
 }

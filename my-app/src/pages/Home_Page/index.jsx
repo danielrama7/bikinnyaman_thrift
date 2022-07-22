@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./style.css";
+import Ulasan_Home_Page from "./Ulasan_Home_Page";
 
 function Home_Page() {
   return (
@@ -19,7 +20,9 @@ function Home_Page() {
             <div className="bg-red-100 h-60 w-72">Wanita</div>
           </div>
           <Swiper
-            pagination={true}
+            pagination={{
+              clickable: true,
+            }}
             loop={true}
             autoplay={{
               delay: 2500,
@@ -40,19 +43,42 @@ function Home_Page() {
           </Swiper>
         </div>
         <h1 className="text-3xl font-bold text-center mb-8">Produk Kami</h1>
-        <h1 className="text-xl font-bold mb-4">Pakaian Wanita</h1>
-        <div className="mb-12 w-full">
+        <h1 className="text-xl font-bold ml-7">Pakaian Wanita</h1>
+        <div className="w-full h-[420px]">
           <Swiper
             slidesPerView={4}
-            spaceBetween={4}
+            spaceBetween={-4}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper1"
           >
             <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <NavLink to="/productDetail">
+                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                  <div className="h-60">
+                    <img
+                      src={product1}
+                      alt=""
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="mt-4 text-left">
+                    <p>Sweater Illionis</p>
+                  </div>
+                  <div className="flex justify-between">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
+                </div>
+              </NavLink>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="mt-4 text-left">
                   <p>Sweater Illionis</p>
@@ -63,100 +89,191 @@ function Home_Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="mt-4 text-left">
                   <p>Sweater Illionis</p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between">
                   <p className="font-bold">Rp. 50.000</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="mt-4 text-left">
                   <p>Sweater Illionis</p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between">
                   <p className="font-bold">Rp. 50.000</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="mt-4 text-left">
                   <p>Sweater Illionis</p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between">
                   <p className="font-bold">Rp. 50.000</p>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="mt-4 text-left">
                   <p>Sweater Illionis</p>
                 </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 h-[360px] w-72 p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="mt-4 text-left">
-                  <p>Sweater Illionis</p>
-                </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between">
                   <p className="font-bold">Rp. 50.000</p>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
-        <h1 className="text-xl font-bold mb-4">Pakaian Pria</h1>
-        <div className="w-full">
+        <h1 className="text-xl font-bold ml-7">Pakaian Pria</h1>
+        <div className="w-full h-[420px]">
           <Swiper
             slidesPerView={4}
-            spaceBetween={16}
+            spaceBetween={-4}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-red-100 h-[360px] w-72">aaa</div>
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater Illionis</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <h1 className="text-3xl font-bold text-center mb-10">Ulasan Toko</h1>
+        <div>
+          <Ulasan_Home_Page />
         </div>
       </div>
     </div>
