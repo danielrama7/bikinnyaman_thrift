@@ -4,8 +4,14 @@ import "./style.css";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div>
+    <div className="sticky top-0 right-0 left-0 z-10 bg-white">
       <nav class="flex items-center justify-between flex-wrap shadow-md py-2 lg:px-12 border-solid border-t-2 border-blue-700">
         <div class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
           <NavLink to="/homePage">
@@ -45,12 +51,12 @@ function Navbar() {
                 Pria
               </a>
             </NavLink>
-            <a
-              href="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0 hover:text-[#d0cba0] px-4 py-2 rounded"
+            <button
+              onClick={scrollToBottom}
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-[#d0cba0] px-4 py-2 rounded font-bold"
             >
               Bantuan
-            </a>
+            </button>
           </div>
           <div class="relative w-80 text-gray-600 lg:block hidden">
             <input

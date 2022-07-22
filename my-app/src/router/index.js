@@ -31,6 +31,16 @@ function router() {
           ))}
         </Route>
         <Route path="/" element={<LayoutUser />}>
+          <Route element={<Ulasan_Toko />} path={"/ulasanToko"}>
+            <Route element={<Semua_Ulasan />} path={"/ulasanToko"} />
+            <Route element={<Ulasan1 />} path={"/ulasanToko/ulasan1"} />
+            <Route element={<Ulasan2 />} path={"/ulasanToko/ulasan2"} />
+            <Route element={<Ulasan3 />} path={"/ulasanToko/ulasan3"} />
+            <Route element={<Ulasan4 />} path={"/ulasanToko/ulasan4"} />
+            <Route element={<Ulasan5 />} path={"/ulasanToko/ulasan5"} />
+          </Route>
+        </Route>
+        <Route path="/" element={<LayoutUser />}>
           <Route element={<Informasi_Akun />} path={"/informasiAkun"}>
             <Route element={<Informasi_Akun1 />} path={"/informasiAkun"} />
             <Route
@@ -45,16 +55,6 @@ function router() {
               element={<Riwayat_Pemesanan />}
               path={"/informasiAkun/riwayatPemesanan"}
             />
-          </Route>
-        </Route>
-        <Route path="/" element={<LayoutUser />}>
-          <Route element={<Ulasan_Toko />} path={"/ulasanToko"}>
-            <Route element={<Semua_Ulasan />} path={"/ulasanToko"} />
-            <Route element={<Ulasan1 />} path={"/ulasanToko/ulasan1"} />
-            <Route element={<Ulasan2 />} path={"/ulasanToko/ulasan2"} />
-            <Route element={<Ulasan3 />} path={"/ulasanToko/ulasan3"} />
-            <Route element={<Ulasan4 />} path={"/ulasanToko/ulasan4"} />
-            <Route element={<Ulasan5 />} path={"/ulasanToko/ulasan5"} />
           </Route>
         </Route>
       </Routes>

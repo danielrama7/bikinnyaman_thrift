@@ -11,18 +11,26 @@ function Informasi_Akun() {
       </div>
       <div className="mx-40 mt-12 p-3">
         <div className="flex">
-          <div className="bg-white p-6 w-52 mr-6">
-            <div className="mb-4">
-              <Link to={"/informasiAkun"}>Informasi Akun</Link>
+          <div className="bg-white w-52 h-fit mr-6">
+            <div>
+              <Link to={"/informasiAkun"}>
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                  Informasi Akun
+                </button>
+              </Link>
             </div>
-            <div className="mb-4">
+            <div>
               <Link to={"/informasiAkun/riwayatPembelian"}>
-                Riwayat Pembelian
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                  Riwayat Pembelian
+                </button>
               </Link>
             </div>
             <div>
               <Link to={"/informasiAkun/riwayatPemesanan"}>
-                Riwayat Pemesanan
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                  Riwayat Pemesanan
+                </button>
               </Link>
             </div>
           </div>
