@@ -2,7 +2,7 @@ import product1 from "../../img/product1.jpg";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,8 +19,13 @@ function Home_Page() {
             <div className="bg-red-100 h-60 w-72">Wanita</div>
           </div>
           <Swiper
-            navigation={true}
-            modules={[Navigation]}
+            pagination={true}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination]}
             className="mySwiper sectionThumbnail"
           >
             <SwiperSlide>
