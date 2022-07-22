@@ -14,21 +14,21 @@ function Informasi_Akun() {
           <div className="bg-white w-52 h-fit mr-6">
             <div>
               <Link to={"/informasiAkun"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                <button className="w-full p-2 pl-4 hover:bg-[#d0cba0] duration-500 text-left">
                   Informasi Akun
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/informasiAkun/riwayatPembelian"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                <button className="w-full p-2 pl-4 hover:bg-[#d0cba0] duration-500 text-left">
                   Riwayat Pembelian
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/informasiAkun/riwayatPemesanan"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                <button className="w-full p-2 pl-4 hover:bg-[#d0cba0] duration-500 text-left">
                   Riwayat Pemesanan
                 </button>
               </Link>
