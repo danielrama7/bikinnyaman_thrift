@@ -16,6 +16,7 @@ import Informasi_Pembelian from "../pages/Informasi_Pembelian";
 import Detail_Pembelian from "../pages/Detail_Pembelian";
 import Product_Wanita from "../pages/Product/Product_Wanita";
 import Product_Pria from "../pages/Product/Product_Pria";
+import Hasil_Pencarian from "../pages/Product/Hasil_Pencarian";
 
 export const routes = [
   {
@@ -161,5 +162,13 @@ export const routes = [
     },
     exact: true,
     component: Detail_Pembelian,
+  },
+  {
+    name: "Hasil_Pencarian",
+    path: () => {
+      return "/hasilPencarian";
+    },
+    exact: true,
+    component: Hasil_Pencarian,
   },
 ];

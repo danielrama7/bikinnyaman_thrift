@@ -10,6 +10,7 @@ function Navbar() {
       behavior: "smooth",
     });
   };
+
   return (
     <div className="sticky top-0 right-0 left-0 z-10 bg-white">
       <nav class="flex items-center justify-between flex-wrap shadow-md py-2 lg:px-12 border-solid border-t-2 border-blue-700">
@@ -62,25 +63,31 @@ function Navbar() {
             <input
               class="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm w-full"
               type="search"
+              id="search"
               name="search"
               placeholder="Search"
             />
-            <button type="submit" class="flex absolute right-0 top-0 mt-3 mr-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="gray"
-                strokeWidth={2}
+            <NavLink to="/hasilPencarian">
+              <button
+                type="submit"
+                class="flex absolute right-0 top-0 mt-3 mr-2"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="gray"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </NavLink>
           </div>
           <div class="flex ">
             <NavLink to="/informasiAkun">
