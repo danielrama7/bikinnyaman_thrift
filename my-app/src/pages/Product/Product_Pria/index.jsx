@@ -16,19 +16,231 @@ function Product_Pria() {
             <div className="flex items-center h-12 font-bold text-3xl mb-7">
               PAKAIAN PRIA
             </div>
-            <div className="bg-white h-[216px] mb-7 px-5">
+            <div className="bg-white h-48 mb-7 px-5">
               <div className="flex items-center bg-white h-12 font-bold">
                 KATEGORI
               </div>
               <hr />
+              <div className="my-2 flex items-center">
+                <input
+                  type="checkbox"
+                  id="t-shirt"
+                  className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                />
+                <label
+                  htmlFor="t-shirt"
+                  className="cursor-pointer  hover:text-[#d0cba0]"
+                >
+                  t-shirt
+                </label>
+              </div>
+              <div className="mb-2 flex items-center">
+                <input
+                  type="checkbox"
+                  id="kemeja"
+                  className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                />
+                <label
+                  htmlFor="kemeja"
+                  className="cursor-pointer  hover:text-[#d0cba0]"
+                >
+                  kemeja
+                </label>
+              </div>
+              <div className="mb-2 flex items-center">
+                <input
+                  type="checkbox"
+                  id="outer"
+                  className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                />
+                <label
+                  htmlFor="outer"
+                  className="cursor-pointer  hover:text-[#d0cba0]"
+                >
+                  outer
+                </label>
+              </div>
+              <div className="mb-2 flex items-center">
+                <input
+                  type="checkbox"
+                  id="celana"
+                  className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                />
+                <label
+                  htmlFor="celana"
+                  className="cursor-pointer  hover:text-[#d0cba0]"
+                >
+                  celana
+                </label>
+              </div>
             </div>
-            <div className="bg-white h-[216px] mb-7 px-5">
+            <div className="bg-white h-72 mb-7 px-5">
               <div className="flex items-center h-12 font-bold">WARNA</div>
               <hr />
+              <div>
+                <div className="my-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="putih"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="putih"
+                    className="cursor-pointer hover:text-[#d0cba0]"
+                  >
+                    putih
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="hitam"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="hitam"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    hitam
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="abu"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="abu"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    abu
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="merah"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="merah"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    merah
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="biru"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="biru"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    biru
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="hijau"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="hijau"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    hijau
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="kuning"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="kuning"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    kuning
+                  </label>
+                </div>
+              </div>
             </div>
-            <div className="bg-white h-[216px] px-5">
+            <div className="bg-white h-56 px-5">
               <div className="flex items-center h-12 font-bold">UKURAN</div>
               <hr />
+              <div>
+                <div className="my-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="S"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="S"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    S
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="MD"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="MD"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    MD
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="L"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="L"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    L
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="XL"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="XL"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    XL
+                  </label>
+                </div>
+                <div className="mb-2 flex items-center">
+                  <input
+                    type="checkbox"
+                    id="XXL"
+                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
+                  />
+                  <label
+                    htmlFor="XXL"
+                    className="cursor-pointer  hover:text-[#d0cba0]"
+                  >
+                    XXL
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <div className="w-[872px]">
