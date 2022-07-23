@@ -276,94 +276,110 @@ function Hasil_Pencarian() {
                   </div>
                 </div>
               </NavLink>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
+              </NavLink>
+              <NavLink to="/productDetail">
+                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
+                  <div className="h-64">
+                    <img src={product1} alt="" className="object-cover" />
+                  </div>
+                  <div className="">
+                    <p>Sweater Illinois</p>
+                  </div>
+                  <div className="flex justify-between ">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
                 </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
-                </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
-                </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
-                </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
-                </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
-              <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                <div className="h-64">
-                  <img src={product1} alt="" className="object-cover" />
-                </div>
-                <div className="">
-                  <p>Sweater Illinois</p>
-                </div>
-                <div className="flex justify-between ">
-                  <p className="font-bold">Rp. 50.000</p>
-                </div>
-              </div>
+              </NavLink>
             </div>
             <div className="flex items-center justify-center bg-white h-12 my-7">
               <div class="flex justify-center">
