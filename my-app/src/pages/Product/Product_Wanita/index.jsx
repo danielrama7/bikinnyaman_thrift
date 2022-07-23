@@ -206,14 +206,14 @@ function Product_Wanita() {
                 <div className="mb-2 flex items-center">
                   <input
                     type="checkbox"
-                    id="MD"
+                    id="M"
                     className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
                   />
                   <label
-                    htmlFor="MD"
+                    htmlFor="M"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    MD
+                    M
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import jaket from "../../img/ulasan.jpg";
 import { Rating } from "react-simple-star-rating";
 import product1 from "../../img/product1.jpg";
+import { NavLink } from "react-router-dom";
 
 function Ulasan() {
   const [rating, setRating] = useState(0); // initial rating value
@@ -65,9 +66,11 @@ function Ulasan() {
                   </div>
                 </div>
                 <div>
-                  <button className="bg-[#d0cba0] font-bold text-white justif-center w-full p-1 border rounded">
-                    Kirim
-                  </button>
+                  <NavLink to={"/ulasanToko"}>
+                    <button className="bg-[#d0cba0] font-bold text-white justif-center w-full p-1 border rounded">
+                      Kirim
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>
