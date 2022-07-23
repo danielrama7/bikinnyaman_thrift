@@ -254,7 +254,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -267,7 +267,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -280,7 +280,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -293,7 +293,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -306,7 +306,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -319,7 +319,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -332,7 +332,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -345,7 +345,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>
@@ -358,7 +358,7 @@ function Product_Pria() {
                     <img src={product1} alt="" className="object-cover" />
                   </div>
                   <div className="">
-                    <p>Sweater Illinois</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between ">
                     <p className="font-bold">Rp. 50.000</p>

@@ -34,7 +34,7 @@ function Wishlist() {
                     </div>
                     <div className="grow text-center">
                       <a href="" className="font-bold">
-                        Sweater Illinois
+                        Sweater / Crewneck Pastel Mint Blue GAP
                       </a>
                       <p className="text-sm">Warna: Hitam</p>
                       <p className="text-sm">Ukuran: SL</p>
@@ -101,7 +101,7 @@ function Wishlist() {
                     </div>
                     <div className="grow text-center">
                       <a href="" className="font-bold">
-                        Sweater Illinois
+                        Sweater / Crewneck Pastel Mint Blue GAP
                       </a>
                       <p className="text-sm">Warna: Hitam</p>
                       <p className="text-sm">Ukuran: SL</p>

@@ -90,7 +90,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -109,7 +109,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -128,7 +128,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -147,7 +147,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -166,7 +166,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -185,7 +185,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -215,7 +215,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -234,7 +234,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -253,7 +253,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -272,7 +272,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -291,7 +291,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -310,7 +310,7 @@ function Home_Page() {
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater Illionis</p>
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>

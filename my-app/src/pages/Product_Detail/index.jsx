@@ -31,16 +31,18 @@ function Product_Detail() {
         </h1>
       </div>
       <div className="mx-20 py-16 p-3">
-        <div className="flex bg-white p-8">
+        <div className="flex bg-white p-8 rounded">
           <div className="w-2/5 h-[525px] pr-8">
             <img
               src={activeImg}
               alt=""
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full rounded"
             />
           </div>
           <div className="w-3/5">
-            <p className="font-bold text-2xl mb-2">Sweater Illinois</p>
+            <p className="font-bold text-2xl mb-2">
+              Sweater / Crewneck Pastel Mint Blue GAP
+            </p>
             <p className="font-bold text-xl mb-5">Rp. 50.000</p>
             <p className="mb-5 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -111,19 +113,94 @@ function Product_Detail() {
                   <SwiperSlide>
                     <div
                       key={i}
-                      className="h-40 w-32"
+                      className="h-40 w-32 cursor-pointer"
                       onClick={() => handlerImg(img)}
                     >
                       <img
                         src={img}
                         alt=""
-                        className="object-cover h-full w-full"
+                        className="object-cover h-full w-full rounded"
                       />
                     </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
+          </div>
+        </div>
+        <div className="mt-8 bg-white p-8 rounded">
+          <div>
+            <h1 className="font-bold text-2xl mb-2">Produk Lainnya</h1>
+          </div>
+          <div className="flex justify-between">
+            <NavLink to="/productDetail" className="w-1/4">
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
+            </NavLink>
+            <NavLink to="/productDetail" className="w-1/4">
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
+            </NavLink>
+            <NavLink to="/productDetail" className="w-1/4">
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
+            </NavLink>
+            <NavLink to="/productDetail" className="w-1/4">
+              <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
+                <div className="h-60">
+                  <img
+                    src={product1}
+                    alt=""
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="mt-4 text-left">
+                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                </div>
+                <div className="flex justify-between">
+                  <p className="font-bold">Rp. 50.000</p>
+                </div>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>

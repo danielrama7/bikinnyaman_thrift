@@ -4,17 +4,17 @@ import { NavLink } from "react-router-dom";
 
 const dataDummy = [
   {
-    nama: "Sweater Illionis",
+    nama: "Sweater / Crewneck Pastel Mint Blue GAP",
     warna: "Hitam",
     ukuran: "Small",
-    harga: 10000,
+    harga: 100000,
     jumlah: 1,
   },
   {
-    nama: "Sweater Illionis",
+    nama: "Sweater / Crewneck Pastel Mint Blue GAP",
     warna: "Hitam",
     ukuran: "Small",
-    harga: 10000,
+    harga: 100000,
     jumlah: 1,
   },
 ];
