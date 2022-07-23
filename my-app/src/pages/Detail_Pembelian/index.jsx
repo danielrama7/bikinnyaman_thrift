@@ -51,7 +51,7 @@ function Detail_Pembelian() {
                 className="object-cover h-full w-full"
               />
             </div>
-            <div className="w-5/12 text-center">
+            <div className="w-5/12 text-left">
               <h1 className="font-bold block">
                 Sweater / Crewneck Pastel Mint Blue GAP
               </h1>
@@ -78,7 +78,7 @@ function Detail_Pembelian() {
                 className="object-cover h-full w-full"
               />
             </div>
-            <div className="w-5/12 text-center">
+            <div className="w-5/12 text-left">
               <h1 className="font-bold block">
                 Sweater / Crewneck Pastel Mint Blue GAP
               </h1>
