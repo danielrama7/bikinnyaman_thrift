@@ -1,8 +1,6 @@
 import Cara_Pemesanan from "../pages/Cara_Pemesanan";
 import Kebijakan_Pengembalian from "../pages/Kebijakan_Pengembalian";
 import Kebijakan_Privasi from "../pages/Kebijakan_Privasi";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
 import Syarat_Ketentuan from "../pages/Syarat_Ketentuan";
 import Tentang_Kami from "../pages/Tentang_Kami";
 import Kontak_Kami from "../pages/Kontak_Kami";
@@ -19,22 +17,6 @@ import Product_Pria from "../pages/Product/Product_Pria";
 import Hasil_Pencarian from "../pages/Product/Hasil_Pencarian";
 
 export const routes = [
-  {
-    name: "Login",
-    path: () => {
-      return "/login";
-    },
-    exact: true,
-    component: Login,
-  },
-  {
-    name: "Register",
-    path: () => {
-      return "/register";
-    },
-    exact: true,
-    component: Register,
-  },
   {
     name: "Cara_Pemesanan",
     path: () => {
