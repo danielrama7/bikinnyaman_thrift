@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Popup from "reactjs-popup";
+import Pembayaran from "./Pembayaran";
 
 const dataDummy3 = [
   {
@@ -25,7 +27,7 @@ function Riwayat_Pemesanan() {
   return (
     <div>
       <div className="flex justify-center mb-6">
-        <h1 className="font-bold text-3xl">Riwayat Pembelian</h1>
+        <h1 className="font-bold text-3xl">Riwayat Pemesanan</h1>
       </div>
       <hr className="border-2 rounded mb-4" />
       <div>
@@ -65,9 +67,16 @@ function Riwayat_Pemesanan() {
                 </td>
                 <td>
                   <div className="flex items-center justify-center">
-                    <button className="bg-[#d0cba0] p-[5px] border-transparent rounded w-full text-white font-bold">
-                      {item.konfirmasi}
-                    </button>
+                    <Popup
+                      trigger={
+                        <button className="bg-[#d0cba0] p-[5px] border-transparent rounded w-full text-white font-bold">
+                          {item.konfirmasi}
+                        </button>
+                      }
+                      position="center"
+                    >
+                      <Pembayaran />
+                    </Popup>
                   </div>
                 </td>
                 <td>

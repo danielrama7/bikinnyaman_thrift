@@ -1,5 +1,6 @@
 import React from "react";
 import product1 from "../../img/product1.jpg";
+import { NavLink } from "react-router-dom";
 
 function FAQ() {
   return (
@@ -10,11 +11,11 @@ function FAQ() {
           Frequently Ask Question
         </h1>
       </div>
-      <div className="mx-20 mt-12 p-3">
+      <div className="mx-20 py-16 p-3">
         <div className="bg-white p-10">
           <div className="mb-8">
             <h1 className="font-bold mb-3 text-xl">Pemesanan Produk</h1>
-            <div className="flex bg-[#F6F6F6] border border-4 p-1 mb-3">
+            <div className="flex bg-[#F6F6F6] border-2 rounded p-2 mb-3">
               <p className="text-md">Bagaimana cara memesan barang?</p>
             </div>
             <p className="text-md px-2">
@@ -24,7 +25,7 @@ function FAQ() {
           </div>
           <div className="mb-8">
             <h1 className="font-bold mb-3 text-xl">Pemesanan Produk</h1>
-            <div className="flex bg-[#F6F6F6] border border-4 p-1 mb-3">
+            <div className="flex bg-[#F6F6F6] border-2 rounded p-2 mb-3">
               <p className="text-md">Bagaimana cara memesan barang?</p>
             </div>
             <p className="text-md px-2">
@@ -42,7 +43,7 @@ function FAQ() {
                 <input
                   type="text"
                   placeholder="Email"
-                  className="placeholder:text-slate-400 px-2"
+                  className="placeholder:text-slate-400 px-2 w-full"
                 />
               </div>
             </div>
@@ -54,13 +55,17 @@ function FAQ() {
                 <input
                   type="text"
                   placeholder="Pertanyan"
-                  className="placeholder:text-slate-400 px-2"
+                  className="placeholder:text-slate-400 px-2 w-full"
                 />
               </div>
             </div>
-            <div className="flex w-full justify-end">
-              <button className="bg-[#F6F6F6] p-1 w-5/6">Kirim</button>
-            </div>
+            <NavLink to="/faq">
+              <div className="flex w-full justify-end">
+                <button className="bg-[#d0cba0] rounded font-bold text-white p-1 w-5/6">
+                  Kirim
+                </button>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>
