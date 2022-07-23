@@ -21,10 +21,10 @@ function Home_Page_Awal() {
       <div className="mx-20 my-12 p-3">
         <div className="flex space-x-12 mb-16 h-[528px]">
           <div className="grid space-y-12">
-            <div className="bg-red-100 h-60 w-72">
+            <div className="bg-gray-200 h-60 w-72">
               <img src={pria} alt="" className="object-cover w-full h-full" />
             </div>
-            <div className="bg-red-100 h-60 w-72">
+            <div className="bg-gray-200 h-60 w-72">
               <img src={wanita} alt="" className="object-cover w-full h-full" />
             </div>
           </div>
@@ -41,7 +41,7 @@ function Home_Page_Awal() {
             className="mySwiper sectionThumbnail"
           >
             <SwiperSlide>
-              <div className="bg-blue-100 w-full h-full">
+              <div className="bg-gray-200 w-full h-full">
                 <img
                   src={carousel1}
                   alt=""
