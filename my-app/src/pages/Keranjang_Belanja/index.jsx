@@ -62,7 +62,7 @@ function Keranjang_Belanja() {
           <table className="table-auto w-full">
             <thead className="bg-[#F6F6F6] h-10 text-center font-bold">
               <tr>
-                <th className="p-2">PRODUK</th>
+                <th className="p-2 w-4/12">PRODUK</th>
                 <th className="p-2">HARGA</th>
                 <th className="p-2">JUMLAH</th>
                 <th className="p-2">TOTAL</th>
@@ -81,10 +81,11 @@ function Keranjang_Belanja() {
                           className="object-cover h-full w-full"
                         />
                       </div>
-                      <div className="text-center pl-10">
-                        <a href="" className="font-bold">
-                          {item.nama}
-                        </a>
+                      <div className="text-center pl-2 w-2/3">
+                        <NavLink to={"/productDetail"}>
+                          <p className="font-bold">{item.nama}</p>
+                        </NavLink>
+
                         <p className="text-sm">Warna: {item.warna}</p>
                         <p className="text-sm">Ukuran: {item.ukuran}</p>
                       </div>

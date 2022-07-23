@@ -14,10 +14,10 @@ function Wishlist() {
           <table className="table-auto w-full">
             <thead className="bg-[#F6F6F6] h-10 text-center font-bold">
               <tr>
-                <th className="p-2">PRODUK</th>
+                <th className="p-2 w-2/5">PRODUK</th>
                 <th className="p-2">HARGA</th>
                 <th className="p-2">STATUS BARANG</th>
-                <th className="p-2">MASUKKAN KERANJANG</th>
+                <th className="p-2 w-1/5">MASUKKAN KERANJANG</th>
                 <th className="p-2">HAPUS</th>
               </tr>
             </thead>
@@ -32,10 +32,12 @@ function Wishlist() {
                         className="object-cover h-full w-full"
                       />
                     </div>
-                    <div className="grow text-center">
-                      <a href="" className="font-bold">
-                        Sweater / Crewneck Pastel Mint Blue GAP
-                      </a>
+                    <div className="text-center ml-4 w-2/3">
+                      <NavLink to={"/productDetail"}>
+                        <p className="font-bold">
+                          Sweater / Crewneck Pastel Mint Blue GAP
+                        </p>
+                      </NavLink>
                       <p className="text-sm">Warna: Hitam</p>
                       <p className="text-sm">Ukuran: SL</p>
                     </div>
@@ -99,7 +101,7 @@ function Wishlist() {
                         className="object-cover h-full w-full"
                       />
                     </div>
-                    <div className="grow text-center">
+                    <div className="text-center ml-4 w-2/3">
                       <a href="" className="font-bold">
                         Sweater / Crewneck Pastel Mint Blue GAP
                       </a>
