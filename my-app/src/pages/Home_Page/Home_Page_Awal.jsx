@@ -50,7 +50,7 @@ function Home_Page_Awal() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-blue-100 w-full h-full">
+              <div className="bg-gray-200 w-full h-full">
                 <img
                   src={carousel2}
                   alt=""
@@ -59,7 +59,7 @@ function Home_Page_Awal() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-blue-100 w-full h-full">
+              <div className="bg-gray-200 w-full h-full">
                 <img
                   src={carousel3}
                   alt=""

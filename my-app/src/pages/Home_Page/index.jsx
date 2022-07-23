@@ -41,7 +41,7 @@ function Home_Page() {
             className="mySwiper sectionThumbnail"
           >
             <SwiperSlide>
-              <div className="bg-blue-100 w-full h-full">
+              <div className="bg-gray-200 w-full h-full">
                 <img
                   src={carousel1}
                   alt=""
@@ -59,7 +59,7 @@ function Home_Page() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-blue-100 w-full h-full">
+              <div className="bg-gray-200 w-full h-full">
                 <img
                   src={carousel3}
                   alt=""
