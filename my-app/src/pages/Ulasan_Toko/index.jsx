@@ -14,42 +14,42 @@ function Ulasan_Toko() {
           <div className="bg-white w-52 h-fit mr-6 rounded text-sm">
             <div>
               <Link to={"/ulasanToko"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   Semua
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan5"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0]  duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   5 Bintang (3)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan4"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0]  duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   4 Bintang (3)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan3"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0]  duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   3 Bintang (3)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan2"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0]  duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   2 Bintang (3)
                 </button>{" "}
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan1"}>
-                <button className="w-full p-2 hover:bg-[#d0cba0]  duration-500">
+                <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
                   1 Bintang (3)
                 </button>
               </Link>

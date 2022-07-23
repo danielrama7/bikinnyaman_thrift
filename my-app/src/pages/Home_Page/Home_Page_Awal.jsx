@@ -74,15 +74,34 @@ function Home_Page_Awal() {
         <div className="w-full h-[420px]">
           <Swiper
             slidesPerView={4}
-            spaceBetween={-4}
+            spaceBetween={10}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper1"
           >
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
+                    <img
+                      src={product1}
+                      alt=""
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="mt-4 text-left ">
+                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                  </div>
+                  <div className="flex justify-between">
+                    <p className="font-bold">Rp. 50.000</p>
+                  </div>
+                </div>
+              </NavLink>
+            </SwiperSlide>
+            <SwiperSlide>
+              <NavLink to="/productDetail">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -100,8 +119,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -119,8 +138,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -138,8 +157,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -157,27 +176,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
-                    <img
-                      src={product1}
-                      alt=""
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-            </SwiperSlide>
-            <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-lg hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -199,15 +199,15 @@ function Home_Page_Awal() {
         <div className="w-full h-[420px]">
           <Swiper
             slidesPerView={4}
-            spaceBetween={-4}
+            spaceBetween={10}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -225,8 +225,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -244,8 +244,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -263,8 +263,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -282,8 +282,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
@@ -301,8 +301,8 @@ function Home_Page_Awal() {
             </SwiperSlide>
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-68 p-4">
-                  <div className="h-60">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                  <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""

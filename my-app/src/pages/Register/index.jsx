@@ -69,12 +69,14 @@ function Register() {
               placeholder="ulang password"
             />
           </div>
-          <button
-            type="submit"
-            class="w-full mt-6 bg-[#282517] rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold"
-          >
-            Daftar
-          </button>
+          <NavLink to="/login">
+            <button
+              type="submit"
+              class="w-full mt-6 bg-[#282517] rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold"
+            >
+              Daftar
+            </button>
+          </NavLink>
           <div class="flex flex-row pt-3 text-[14px]">
             <p>Sudah punya akun?</p>
             <NavLink to="/login">
