@@ -31,7 +31,8 @@ function Cara_Pemesanan() {
             8. Konfirmasi pembayaran di halaman riwayat pemesanan
           </li>
           <li class="mt-2">
-            9. Jika pembayaran telah terselesaikan, nomor resi akan muncul
+            9. Jika pembayaran telah terselesaikan, status pada riwayat
+            pemesanan akan berubah menjadi sudah bayar.
           </li>
         </ul>
       </div>
