@@ -4,6 +4,7 @@ import React, { useState, useEffect, useContext } from "react";
 import riwayatPemesananAPI from "../../api/riwayatPemesanan";
 import { UserContext } from "../../context/context";
 import { useNavigate } from "react-router-dom";
+import moment from "moment";
 
 function Riwayat_Pemesanan() {
   // Set the initial count state to zero, 0
@@ -34,6 +35,12 @@ function Riwayat_Pemesanan() {
     }
   };
 
+  const changeDate = (tanggal) => {
+    let date;
+    date = new Date(tanggal + "Z");
+    return date.toLocaleFormat("%d-%b-%y");
+  };
+
   return (
     <div>
       <div className="flex justify-center mb-6">
@@ -57,7 +64,7 @@ function Riwayat_Pemesanan() {
               <tr className="text-sm h-16 pb-2">
                 <td>
                   <div className="flex items-center justify-center">
-                    <p>{item.tanggal}</p>
+                    <p>{moment(item.tanggal).format("DD/MM/YYYY")}</p>
                   </div>
                 </td>
                 <td>
