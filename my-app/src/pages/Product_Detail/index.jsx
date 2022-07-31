@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { NavLink } from "react-router-dom";
 import product1 from "../../img/product1.jpg";
@@ -7,6 +7,7 @@ import product3 from "../../img/product1.2.jpg";
 import product4 from "../../img/product1.3.jpg";
 import product5 from "../../img/product1.4.jpg";
 import product6 from "../../img/product1.5.jpg";
+import { UserContext } from "../../context/context";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,6 +19,7 @@ import { Navigation } from "swiper";
 const miniImg = [product1, product2, product3, product4, product5, product6];
 function Product_Detail() {
   const [activeImg, setActiveImg] = useState(product1);
+  const { user, setUser } = useContext(UserContext);
 
   const handlerImg = (img) => {
     setActiveImg(img);
@@ -68,14 +70,17 @@ function Product_Detail() {
             </div>
             <div className="flex justify-between mb-5">
               <div className="w-full pr-4">
-                <NavLink to="/keranjangBelanja" className="w-full">
+                <NavLink
+                  to={user ? "/keranjangBelanja" : "/login"}
+                  className="w-full"
+                >
                   <button className="font-bold hover:text-white p-2 border-2 rounded w-full hover:bg-[#d0cba0] hover:border-transparent duration-500">
                     Tambahkan ke Keranjang
                   </button>
                 </NavLink>
               </div>
               <div className="w-full">
-                <NavLink to="/wishlist" className="w-full">
+                <NavLink to={user ? "/wishlist" : "/login"} className="w-full">
                   <button className="font-bold hover:text-white p-2 border-2 rounded w-full hover:bg-[#d0cba0] hover:border-transparent duration-500">
                     Tambahkan ke Wishlist
                   </button>

@@ -1,7 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react";
+import userAPI from "../../api/user";
+import { UserContext } from "../../context/context";
 
 function Informasi_Akun1() {
+  const [detail, setDetail] = useState([]);
+  const { user, setUser } = useContext(UserContext);
+  const id = user?.id;
+
+  useEffect(() => {
+    const fetchDetailUser = async () => {
+      const res = await userAPI.getDetailUser(id);
+      setDetail(res.data.data);
+    };
+    fetchDetailUser();
+  }, [id]);
   return (
     <div>
       <div className="flex justify-center mb-6">
@@ -9,22 +22,25 @@ function Informasi_Akun1() {
       </div>
       <div className="flex mb-4">
         <div className="w-1/4">Nama Lengkap</div>
-        <div className="w-3/4">Putri</div>
+        <div className="w-3/4">
+          {detail.namaLengkap ? detail.namaLengkap : "-"}
+        </div>
       </div>
       <div className="flex mb-4">
         <div className="w-1/4">Email</div>
-        <div className="w-3/4">Putri@gmail.com</div>
+        <div className="w-3/4">{detail.email ? detail.email : "-"}</div>
       </div>
       <div className="flex mb-4">
         <div className="w-1/4">Alamat</div>
         <div className="w-3/4">
-          Jl. Asep Berlian No.31 Kelurahan Cicadas, Kecamatan Cibeunying Kidul,
-          Kota Bandung, Jawa Barat, 40121
+          {detail.alamat
+            ? `${detail.alamat}, ${detail.kelurahan}, ${detail.kecamatan}, ${detail.kabupatenKota}, ${detail.provinsi}, ${detail.kodePos}`
+            : "-"}
         </div>
       </div>
       <div className="flex mb-6">
         <div className="w-1/4">No. Telepon</div>
-        <div className="w-3/4">081313283176</div>
+        <div className="w-3/4">{detail.noTelp ? detail.noTelp : "-"}</div>
       </div>
       <div>
         <Link to={"/informasiAkun/edit"}>

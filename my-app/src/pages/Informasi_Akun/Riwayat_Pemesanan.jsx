@@ -1,31 +1,37 @@
-import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import "./style.css";
+import React, { useState, useEffect, useContext } from "react";
+import riwayatPemesananAPI from "../../api/riwayatPemesanan";
+import { UserContext } from "../../context/context";
+import { useNavigate } from "react-router-dom";
 
-const dataDummy3 = [
-  {
-    tanggal: "01/01/2022",
-    produk: "Sweater / Crewneck Pastel Mint Blue GAP",
-    jumlah: "1",
-    total: 100000,
-    konfirmasi: "Bayar",
-    status: "Belum Bayar",
-  },
-  {
-    tanggal: "01/01/2022",
-    produk: "Sweater / Crewneck Pastel Mint Blue GAP",
-    jumlah: "1",
-    total: 100000,
-    konfirmasi: "Selesai",
-    status: "Sudah Bayar",
-  },
-];
 function Riwayat_Pemesanan() {
   // Set the initial count state to zero, 0
-  const [data, setData] = useState(dataDummy3);
-  const [state, setstate] = useState(false);
-  const showPopUp = () => {
-    setstate(true);
+  const [riwayatPemesanan, setRiwayatPemesanan] = useState([]);
+  const { user, setUser } = useContext(UserContext);
+  const id = user?.id;
+
+  useEffect(() => {
+    const fetchRiwayatPemesanan = async () => {
+      const res = await riwayatPemesananAPI.getRiwayatPemesanan(id);
+      setRiwayatPemesanan(res.data.data);
+    };
+    fetchRiwayatPemesanan();
+  }, [id]);
+
+  const [message, setMessage] = useState("");
+  const bayarPesanan = async (idPesanan) => {
+    try {
+      // setLoading(true);
+      const res = await riwayatPemesananAPI.editStatus(idPesanan);
+      if (res.data.success) {
+        console.log(res.data.message);
+        window.location.reload();
+      }
+    } catch (error) {
+      setMessage(error.response.data.message);
+      console.log("a");
+    }
   };
 
   return (
@@ -47,7 +53,7 @@ function Riwayat_Pemesanan() {
             </tr>
           </thead>
           <tbody>
-            {data.map((item, i) => (
+            {riwayatPemesanan.map((item, i) => (
               <tr className="text-sm h-16 pb-2">
                 <td>
                   <div className="flex items-center justify-center">
@@ -56,7 +62,7 @@ function Riwayat_Pemesanan() {
                 </td>
                 <td>
                   <div className="flex items-center justify-center">
-                    <p>{item.produk}</p>
+                    <p>{item.namaProduk}</p>
                   </div>
                 </td>
                 <td>
@@ -71,12 +77,12 @@ function Riwayat_Pemesanan() {
                 </td>
                 <td>
                   <div className="flex items-center justify-center">
-                    {item.konfirmasi === "Bayar" ? (
+                    {item.status === "Belum Bayar" ? (
                       <div className="w-full">
                         <Popup
                           trigger={
                             <button className="bg-[#d0cba0] text-white p-[5px] border-transparent rounded w-full font-bold">
-                              {item.konfirmasi}
+                              Bayar
                             </button>
                           }
                         >
@@ -118,7 +124,7 @@ function Riwayat_Pemesanan() {
                                 </div>
                                 <div>
                                   <button
-                                    onClick={close}
+                                    onClick={() => bayarPesanan(item.id)}
                                     className="bg-[#d0cba0] w-full font-bold text-white p-2 rounded-b-md"
                                   >
                                     Selesaikan Pembayaran
@@ -130,7 +136,7 @@ function Riwayat_Pemesanan() {
                         </Popup>
                       </div>
                     ) : (
-                      <h1>{item.konfirmasi}</h1>
+                      <h1>Selesai</h1>
                     )}
                   </div>
                 </td>

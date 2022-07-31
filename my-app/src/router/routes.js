@@ -15,6 +15,8 @@ import Detail_Pembelian from "../pages/Detail_Pembelian";
 import Product_Wanita from "../pages/Product/Product_Wanita";
 import Product_Pria from "../pages/Product/Product_Pria";
 import Hasil_Pencarian from "../pages/Product/Hasil_Pencarian";
+import Login from "../pages/Login";
+import Register_Page from "../pages/Register";
 
 export const routes = [
   {
@@ -152,5 +154,21 @@ export const routes = [
     },
     exact: true,
     component: Hasil_Pencarian,
+  },
+  {
+    name: "Login",
+    path: () => {
+      return "/login";
+    },
+    exact: true,
+    component: Login,
+  },
+  {
+    name: "Register_Page",
+    path: () => {
+      return "/register";
+    },
+    exact: true,
+    component: Register_Page,
   },
 ];

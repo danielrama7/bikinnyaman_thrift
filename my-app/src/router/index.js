@@ -9,7 +9,7 @@ import Riwayat_Pembelian from "../pages/Informasi_Akun/Riwayat_Pembelian";
 import Riwayat_Pemesanan from "../pages/Informasi_Akun/Riwayat_Pemesanan";
 import Ubah_Informasi_Akun from "../pages/Informasi_Akun/Ubah_Informasi_Akun";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Register_Page from "../pages/Register";
 import Ulasan_Toko from "../pages/Ulasan_Toko";
 import Semua_Ulasan from "../pages/Ulasan_Toko/Semua_Ulasan";
 import Ulasan1 from "../pages/Ulasan_Toko/Ulasan1";
@@ -24,12 +24,12 @@ function router() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Navigate replace to="/homePageAwal" />} />
-        <Route path="/" element={<Layout_Awal />}>
+        <Route path="/" element={<Navigate replace to="/homePage" />} />
+        {/* <Route path="/" element={<Layout_Awal />}>
           <Route element={<Home_Page_Awal />} path={"/homePageAwal"} />
           <Route element={<Login />} path={"/login"} />
-          <Route element={<Register />} path={"/register"} />
-        </Route>
+          <Route element={<Register_Page />} path={"/register"} />
+        </Route> */}
         <Route path="/" element={<LayoutUser />}>
           {routes.map((route, index) => (
             <Route
