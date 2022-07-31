@@ -133,6 +133,9 @@ function Register_Page() {
               </p>
             )}
           </div> */}
+          <div>
+            <p className="text-left text-red-500 text-sm">{message}</p>
+          </div>
           <button
             type="submit"
             class="w-full mt-6 bg-[#282517] rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold"
