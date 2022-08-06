@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import product1 from "../../img/product1.jpg";
-import product2 from "../../img/item bikinnyaman/bikinnyaman/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+import product2 from "../../img/productWanita/Poliester Jaket Krem Sogetto (L)/product2.jpg";
 
 import { NavLink } from "react-router-dom";
 

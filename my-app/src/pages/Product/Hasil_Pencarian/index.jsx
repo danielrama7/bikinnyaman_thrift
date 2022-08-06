@@ -1,7 +1,7 @@
 import React from "react";
 import product1 from "../../../img/product1.jpg";
-import product2 from "../../../img/item bikinnyaman/bikinnyaman/Poliester Jaket Krem Sogetto (L)/product2.jpg";
-import product3 from "../../../img/item bikinnyaman/bikinnyaman/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
+import product2 from "../../../img/productWanita/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+import product3 from "../../../img/productWanita/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
 import Dropdown from "./dropdown";
 import { NavLink } from "react-router-dom";
 

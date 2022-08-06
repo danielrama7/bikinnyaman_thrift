@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import product1 from "../../img/product1.jpg";
-import product2 from "../../img/item bikinnyaman/bikinnyaman/ITEM BIKINNYAMAN/Katun Blazer Hijau (XL 65rb)/product7.jpg";
+import product2 from "../../img/productWanita/Katun Blazer Hijau (XL 65rb)/product7.jpg";
 import { NavLink } from "react-router-dom";
 
 function Wishlist() {
