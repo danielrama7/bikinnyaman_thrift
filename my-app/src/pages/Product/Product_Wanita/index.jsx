@@ -1,7 +1,9 @@
 import React from "react";
 import product1 from "../../../img/product1.jpg";
+import product2 from "../../../img/item bikinnyaman/bikinnyaman/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+import product3 from "../../../img/item bikinnyaman/bikinnyaman/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
 import Dropdown from "./dropdown";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Product_Wanita() {
   return (
@@ -258,128 +260,12 @@ function Product_Wanita() {
               </div>
             </div>
           </div>
-          <div className="w-[872px]">
+          <div className="w-[872px] ">
             <div className="flex justify-end items-center h-12 mb-7">
               <Dropdown color="blue" />
             </div>
-            <div className="grid grid-cols-3 gap-7">
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
+            <div>
+              <Outlet />
             </div>
             <div className="flex items-center justify-center bg-white h-12 my-7">
               <div class="flex justify-center">

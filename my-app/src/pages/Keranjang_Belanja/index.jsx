@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import product1 from "../../img/product1.jpg";
+import product2 from "../../img/item bikinnyaman/bikinnyaman/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+
 import { NavLink } from "react-router-dom";
 
 const dataDummy = [
   {
+    img: product1,
     nama: "Sweater / Crewneck Pastel Mint Blue GAP",
-    warna: "Hitam",
-    ukuran: "Small",
-    harga: 100000,
-    jumlah: 1,
-  },
-  {
-    nama: "Sweater / Crewneck Pastel Mint Blue GAP",
-    warna: "Hitam",
-    ukuran: "Small",
-    harga: 100000,
+    warna: "Biru",
+    ukuran: "XL",
+    harga: 65000,
+    stok: 1,
     jumlah: 1,
   },
 ];
@@ -22,18 +19,24 @@ const dataDummy = [
 function Keranjang_Belanja() {
   // Set the initial count state to zero, 0
   const [data, setData] = useState(dataDummy);
+  const [showCheckout, setShowCheckout] = useState(true);
 
   let totalPembayaran = 0;
   for (let i = 0; i < data.length; i++) {
     totalPembayaran += data[i].harga * data[i].jumlah;
   }
 
+  const handleDelete = () => {
+    setData([]);
+    setShowCheckout(false);
+  };
+
   // Create handleIncrement event handler
-  const handleIncrement = (i) => {
+  const handleIncrement = (i, stok) => {
     const newData = [...data];
     newData[i] = {
       ...newData[i],
-      jumlah: data[i].jumlah + 1,
+      jumlah: data[i].jumlah === stok ? data[i].jumlah : data[i].jumlah + 1,
     };
 
     setData(newData);
@@ -76,7 +79,7 @@ function Keranjang_Belanja() {
                     <div className="flex items-center ">
                       <div className="h-28 w-28">
                         <img
-                          src={product1}
+                          src={item.img}
                           alt=""
                           className="object-cover h-full w-full"
                         />
@@ -88,6 +91,7 @@ function Keranjang_Belanja() {
 
                         <p className="text-sm">Warna: {item.warna}</p>
                         <p className="text-sm">Ukuran: {item.ukuran}</p>
+                        <p className="text-sm">Stok: {item.stok}</p>
                       </div>
                     </div>
                   </td>
@@ -108,7 +112,7 @@ function Keranjang_Belanja() {
                         {item.jumlah}
                       </h1>
                       <button
-                        onClick={() => handleIncrement(i)}
+                        onClick={() => handleIncrement(i, item.stok)}
                         className="bg-[#F6F6F6] p-1 w-10 h-8"
                       >
                         +
@@ -129,6 +133,7 @@ function Keranjang_Belanja() {
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       strokeWidth={2}
+                      onClick={() => handleDelete()}
                     >
                       <path
                         strokeLinecap="round"
@@ -141,21 +146,23 @@ function Keranjang_Belanja() {
               ))}
             </tbody>
           </table>
-          <div className="flex justify-end mt-4 mr-10 items-center">
-            <div className="border-2 rounded p-4 w-fit justify-between items-center">
-              <div className="flex mb-2">
-                <h1 className="mr-4 ">Total Pembayaran :</h1>
-                <h1 className="font-bold">Rp. {totalPembayaran}</h1>
-              </div>
-              <div className="flex items-center">
-                <NavLink to="/detailPembelian" className="w-full">
-                  <button className="rounded p-2 bg-[#d0cba0] font-bold text-white h-fit w-full">
-                    Checkout
-                  </button>
-                </NavLink>
+          {showCheckout ? (
+            <div className="flex justify-end mt-4 mr-10 items-center">
+              <div className="border-2 rounded p-4 w-fit justify-between items-center">
+                <div className="flex mb-2">
+                  <h1 className="mr-4 ">Total Pembayaran :</h1>
+                  <h1 className="font-bold">Rp. {totalPembayaran}</h1>
+                </div>
+                <div className="flex items-center">
+                  <NavLink to="/detailPembelian" className="w-full">
+                    <button className="rounded p-2 bg-[#d0cba0] font-bold text-white h-fit w-full">
+                      Checkout
+                    </button>
+                  </NavLink>
+                </div>
               </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
     </div>

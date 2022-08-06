@@ -76,7 +76,7 @@ function Ulasan() {
             </div>
             <div className="flex bg-red-100">
               <img
-                src={jaket}
+                src={product1}
                 alt="Ulasan"
                 className="object-cover h-80 w-80"
               />

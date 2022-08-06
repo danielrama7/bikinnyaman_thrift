@@ -26,11 +26,11 @@ function FAQ() {
           <div className="mb-8">
             <h1 className="font-bold mb-3 text-xl">Pemesanan Produk</h1>
             <div className="flex bg-[#F6F6F6] border-2 rounded p-2 mb-3">
-              <p className="text-md">Bagaimana cara memesan barang?</p>
+              <p className="text-md">Bagaimana cara mengembalikan barang?</p>
             </div>
             <p className="text-md px-2">
-              Langkah-langkah pemesanan produk dapat dilihat di Cara Pemesanan
-              pada bagian Bantuan{" "}
+              Langkah-langkah dan ketentuan pengembalian produk dapat dilihat di
+              Kebijakan Pengembalian pada bagian Bantuan{" "}
             </p>
           </div>
           <div className="border border-4 p-8 w-2/3">

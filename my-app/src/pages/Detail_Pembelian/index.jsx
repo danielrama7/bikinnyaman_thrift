@@ -56,21 +56,21 @@ function Detail_Pembelian() {
                 Sweater / Crewneck Pastel Mint Blue GAP
               </h1>
               <p className="text-sm">Warna: Biru</p>
-              <p className="text-sm">Ukuran: Small</p>
+              <p className="text-sm">Ukuran: XL</p>
             </div>
             <div className="flex justify-center w-2/12">
-              <h1 className="font-bold">Rp. 100.000</h1>
+              <h1 className="font-bold">Rp. 65.000</h1>
             </div>
             <div className="flex justify-center w-1/12">
               <h1>1 buah</h1>
             </div>
             <div className="flex justify-end w-2/12">
-              <h1 className="font-bold">Rp. 100.000</h1>
+              <h1 className="font-bold">Rp. 65.000</h1>
             </div>
           </div>
-          <hr className="w-full border-[1px] px-2" />
+          {/* <hr className="w-full border-[1px] px-2" /> */}
           {/* Produk 2 */}
-          <div className="flex items-center justify-between p-2 py-3">
+          {/* <div className="flex items-center justify-between p-2 py-3">
             <div className="flex w-24 justify-center">
               <img
                 src={product1}
@@ -94,7 +94,7 @@ function Detail_Pembelian() {
             <div className="flex justify-end w-2/12">
               <h1 className="font-bold">Rp. 100.000</h1>
             </div>
-          </div>
+          </div> */}
           {/* Metode Pengiriman */}
           <div className="flex border-2 rounded items-center p-2 mt-4 justify-between">
             <div className="mr-32">
@@ -147,7 +147,7 @@ function Detail_Pembelian() {
               <h1>Subtotal untuk Produk</h1>
             </div>
             <div>
-              <h1 className="font-bold">RP. 200.000</h1>
+              <h1 className="font-bold">RP. 65.000</h1>
             </div>
           </div>
           <div className="flex px-2 mb-4 justify-between">
@@ -164,7 +164,7 @@ function Detail_Pembelian() {
               <h1>Total</h1>
             </div>
             <div>
-              <h1 className="font-bold">RP. 210.000</h1>
+              <h1 className="font-bold">RP. 75.000</h1>
             </div>
           </div>
           <hr className="w-full border-[1px] px-2" />
@@ -205,7 +205,7 @@ function Detail_Pembelian() {
               <h1 className="font-bold">Total</h1>
             </div>
             <div>
-              <h1 className="font-bold">Rp. 210.000</h1>
+              <h1 className="font-bold">Rp. 75.000</h1>
             </div>
           </div>
           {/* button buat pesanan */}

@@ -17,6 +17,11 @@ import Product_Pria from "../pages/Product/Product_Pria";
 import Hasil_Pencarian from "../pages/Product/Hasil_Pencarian";
 import Login from "../pages/Login";
 import Register_Page from "../pages/Register";
+import Product_Detail2 from "../pages/Product_Detail/Product_Detail2";
+import Product_Detail6 from "../pages/Product_Detail/Product_Detail6";
+import Product_Detail5 from "../pages/Product_Detail/Product_Detail5";
+import Product_Detail4 from "../pages/Product_Detail/Product_Detail4";
+import Product_Detail3 from "../pages/Product_Detail/Product_Detail3";
 
 export const routes = [
   {
@@ -122,6 +127,46 @@ export const routes = [
     },
     exact: true,
     component: Product_Detail,
+  },
+  {
+    name: "Product_Detail2",
+    path: () => {
+      return "/productDetail2";
+    },
+    exact: true,
+    component: Product_Detail2,
+  },
+  {
+    name: "Product_Detail3",
+    path: () => {
+      return "/productDetail3";
+    },
+    exact: true,
+    component: Product_Detail3,
+  },
+  {
+    name: "Product_Detail4",
+    path: () => {
+      return "/productDetail4";
+    },
+    exact: true,
+    component: Product_Detail4,
+  },
+  {
+    name: "Product_Detail5",
+    path: () => {
+      return "/productDetail5";
+    },
+    exact: true,
+    component: Product_Detail5,
+  },
+  {
+    name: "Product_Detail6",
+    path: () => {
+      return "/productDetail6";
+    },
+    exact: true,
+    component: Product_Detail6,
   },
   {
     name: "FAQ",

@@ -7,6 +7,10 @@ import product3 from "../../img/product1.2.jpg";
 import product4 from "../../img/product1.3.jpg";
 import product5 from "../../img/product1.4.jpg";
 import product6 from "../../img/product1.5.jpg";
+import productLainnya1 from "../../img/productWanita/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+import productLainnya2 from "../../img/productWanita/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
+import productLainnya3 from "../../img/productWanita/Crewneck Hanes Herway Katun Abu-Abu (XL 65rb)/product4.jpg";
+import productLainnya4 from "../../img/productWanita/Fleece Sweater Biru (XL 90rb)/product5.jpg";
 import { UserContext } from "../../context/context";
 
 import "swiper/css";
@@ -45,7 +49,7 @@ function Product_Detail() {
             <p className="font-bold text-2xl mb-2">
               Sweater / Crewneck Pastel Mint Blue GAP
             </p>
-            <p className="font-bold text-xl mb-5">Rp. 50.000</p>
+            <p className="font-bold text-xl mb-5">Rp. 65.000</p>
             <p className="mb-5 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               accumsan egestas elese ifend. Phasellus a felis at est bibendum
@@ -56,17 +60,13 @@ function Product_Detail() {
               <p className="font-bold text-lg mr-5 mb-2">Warna</p>
             </div>
             <div className="flex gap-x-4 mb-5">
-              <button className="h-8 w-8 bg-black"></button>
-              <button className="h-8 w-8 bg-blue-500"></button>
-              <button className="h-8 w-8 bg-red-500"></button>
+              <button className="h-8 w-8 bg-blue-500 border"></button>
             </div>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Ukuran</p>
             </div>
             <div className="flex gap-x-4 mb-5">
-              <button className="h-8 w-8 bg-White">S</button>
-              <button className="h-8 w-8 bg-White">M</button>
-              <button className="h-8 w-8 bg-White">L</button>
+              <button className="h-8 w-8 bg-White">XL</button>
             </div>
             <div className="flex justify-between mb-5">
               <div className="w-full pr-4">
@@ -87,25 +87,6 @@ function Product_Detail() {
                 </NavLink>
               </div>
             </div>
-            {/* <div className="flex w-full justify-between">
-              <button className="h-40 w-8 mr-4 bg-[#F6F6F6]">&lt;</button>
-              <div className="flex w-full justify-between">
-                {miniImg.map((img, i) => (
-                  <div
-                    key={i}
-                    className="h-40 w-32"
-                    onClick={() => handlerImg(img)}
-                  >
-                    <img
-                      src={img}
-                      alt=""
-                      className="object-cover h-full w-full"
-                    />
-                  </div>
-                ))}
-              </div>
-              <button className="h-40 w-8 bg-[#F6F6F6] ml-4">&gt;</button>
-            </div> */}
             <div>
               <Swiper
                 slidesPerView={4}
@@ -138,71 +119,71 @@ function Product_Detail() {
             <h1 className="font-bold text-2xl mb-2">Produk Lainnya</h1>
           </div>
           <div className="flex justify-between">
-            <NavLink to="/productDetail" className="w-1/4">
+            <NavLink to="/productDetail2" className="w-1/4">
               <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
                 <div className="h-60">
                   <img
-                    src={product1}
+                    src={productLainnya1}
                     alt=""
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="mt-4 text-left">
-                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                  <p>Poliester Jaket Krem Sogetto</p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="font-bold">Rp. 50.000</p>
+                  <p className="font-bold">Rp. 100.000</p>
                 </div>
               </div>
             </NavLink>
-            <NavLink to="/productDetail" className="w-1/4">
+            <NavLink to="/productDetail3" className="w-1/4">
               <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
                 <div className="h-60">
                   <img
-                    src={product1}
+                    src={productLainnya2}
                     alt=""
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="mt-4 text-left">
-                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                  <p>Poliester Kyuck Goo Jaket Putih</p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="font-bold">Rp. 50.000</p>
+                  <p className="font-bold">Rp. 100.000</p>
                 </div>
               </div>
             </NavLink>
-            <NavLink to="/productDetail" className="w-1/4">
+            <NavLink to="/productDetail4" className="w-1/4">
               <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
                 <div className="h-60">
                   <img
-                    src={product1}
+                    src={productLainnya3}
                     alt=""
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="mt-4 text-left">
-                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                  <p>Crewneck Hanes Herway Katun Abu-Abu</p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="font-bold">Rp. 50.000</p>
+                  <p className="font-bold">Rp. 65.000</p>
                 </div>
               </div>
             </NavLink>
-            <NavLink to="/productDetail" className="w-1/4">
+            <NavLink to="/productDetail5" className="w-1/4">
               <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
                 <div className="h-60">
                   <img
-                    src={product1}
+                    src={productLainnya4}
                     alt=""
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="mt-4 text-left">
-                  <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                  <p>Fleece Sweater Biru</p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="font-bold">Rp. 50.000</p>
+                  <p className="font-bold">Rp. 90.000</p>
                 </div>
               </div>
             </NavLink>

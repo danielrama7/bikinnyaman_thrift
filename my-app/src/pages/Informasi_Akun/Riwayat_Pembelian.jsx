@@ -6,14 +6,14 @@ const dataDummy2 = [
     tanggal: "01/01/2022",
     produk: "Sweater / Crewneck Pastel Mint Blue GAP",
     jumlah: "1",
-    total: 100000,
+    total: 75000,
     status: 0,
   },
   {
     tanggal: "01/01/2022",
-    produk: "Sweater / Crewneck Pastel Mint Blue GAP",
+    produk: "Crewneck Wol Kuning ",
     jumlah: "1",
-    total: 100000,
+    total: 75000,
     status: 0,
   },
 ];

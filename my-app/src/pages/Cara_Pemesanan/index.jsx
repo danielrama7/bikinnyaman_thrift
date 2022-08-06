@@ -24,7 +24,7 @@ function Cara_Pemesanan() {
                 <li class="mt-2">2. Tambahkan produk ke keranjang belanja</li>
                 <li class="mt-2">
                   3. Setelah semua produk masuk ke keranjang belanja, tekan
-                  tombol lanjut ke pembayaran
+                  tombol checkout
                 </li>
                 <li class="mt-2">
                   4. Cek dan isi informasi yang dibutuhkan dalam halaman detail
