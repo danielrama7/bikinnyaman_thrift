@@ -1,56 +1,36 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-
-const dataBarang = [
-  {
-    nama: "Poliester Kyuck Goo Jaket Putih ",
-    pakaian: "Wanita",
-    harga: 100000,
-    kategori: "Jaket",
-    ukuran: "L",
-    warna: "Putih",
-    stok: 1,
-  },
-  {
-    nama: "Poliester Jaket Krem Sogetto",
-    pakaian: "Wanita",
-    harga: 100000,
-    kategori: "Jaket",
-    ukuran: "L",
-    warna: "Krem",
-    stok: 1,
-  },
-  {
-    nama: "Crewneck Hanes Herway Katun Abu-Abu",
-    pakaian: "Wanita",
-    harga: 65000,
-    kategori: "Crewneck",
-    ukuran: "XL",
-    warna: "Abu",
-    stok: 1,
-  },
-  {
-    nama: "Fleece Sweater Biru",
-    pakaian: "Wanita",
-    harga: 90000,
-    kategori: "Sweater",
-    ukuran: "XL",
-    warna: "Biru",
-    stok: 1,
-  },
-  {
-    nama: "Poliester Wol Kemeja Coklat",
-    pakaian: "Wanita",
-    harga: 50000,
-    kategori: "Kemeja",
-    ukuran: "S",
-    warna: "Coklat",
-    stok: 1,
-  },
-];
+import React, { useState, useEffect, useContext } from "react";
+import { Navigate, NavLink, useNavigate } from "react-router-dom";
+import productAPI from "../../../api/product";
 
 function Product_Admin() {
-  const [data, setData] = useState(dataBarang);
+  const navigate = useNavigate();
+  const toDetailBarang = (idBarang) => {
+    navigate("/admin/detailProduct", { state: { id: idBarang } });
+  };
+  const toEditBarang = (idBarang) => {
+    navigate("/admin/editProduct", { state: { id: idBarang } });
+  };
+
+  const [barang, setBarang] = useState([]);
+
+  useEffect(() => {
+    const fetchBarang = async () => {
+      const res = await productAPI.getAllBarang();
+      setBarang(res.data.data);
+    };
+    fetchBarang();
+  }, []);
+
+  const deleteFunction = async (idBarang) => {
+    try {
+      const res = await productAPI.deleteBarang(idBarang);
+      if (res.data.success) {
+        window.location.reload();
+      }
+    } catch (error) {
+      console.log(error.response);
+    }
+  };
 
   return (
     <div className="">
@@ -74,7 +54,7 @@ function Product_Admin() {
               </tr>
             </thead>
             <tbody>
-              {data.map((item, i) => (
+              {barang.map((item, i) => (
                 <tr className="text-sm">
                   <td className="border">
                     <div className="p-2">
@@ -83,12 +63,12 @@ function Product_Admin() {
                   </td>
                   <td className="border">
                     <div className="p-2">
-                      <p>{item.nama}</p>
+                      <p>{item.namaProduk}</p>
                     </div>
                   </td>
                   <td className="border">
                     <div className="p-2">
-                      <p>{item.pakaian}</p>
+                      <p>{item.jenis}</p>
                     </div>
                   </td>
                   <td className="border">
@@ -118,40 +98,55 @@ function Product_Admin() {
                   </td>
                   <td className="border">
                     <div className="p-2 flex items-center gap-1">
-                      <NavLink to={"/admin/detailProduct"}>
-                        <div className="cursor-pointer">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-                      </NavLink>
-                      <NavLink to={"/admin/editProduct"}>
-                        <div className="cursor-pointer">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
-                            <path
-                              fillRule="evenodd"
-                              d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-                      </NavLink>
-                      <div>
+                      {/* <NavLink to={"/admin/detailProduct"}> */}
+                      <div
+                        onClick={() => {
+                          toDetailBarang(item.id);
+                        }}
+                        className="cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      {/* </NavLink> */}
+                      {/* <NavLink to={"/admin/editProduct"}> */}
+                      <div
+                        onClick={() => {
+                          toEditBarang(item.id);
+                        }}
+                        className="cursor-pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                          <path
+                            fillRule="evenodd"
+                            d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      {/* </NavLink> */}
+                      <div
+                        onClick={() => {
+                          deleteFunction(item.id);
+                        }}
+                        className="cursor-pointer"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5"
