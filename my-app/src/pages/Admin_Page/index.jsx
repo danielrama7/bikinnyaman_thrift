@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar_Admin from "../../components/Navbar_Admin";
 import logo from "../../img/logo3.png";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AdminContext } from "../../context/context";
 
 function Admin_Page() {
+  const { admin, setAdmin } = useContext(AdminContext);
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log(admin);
+    const cekLogin = async () => {
+      if (!admin) {
+        await navigate("/masukAdmin");
+      } else {
+      }
+    };
+    cekLogin();
+  }, []);
   return (
     <div className="flex min-h-screen">
       <div className="sticky top-0 bg-[#d0cba0] w-1/6 p-6 text-sm text-[#f6f6f6] h-screen">
