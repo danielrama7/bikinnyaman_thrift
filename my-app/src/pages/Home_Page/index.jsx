@@ -1,4 +1,12 @@
 import product1 from "../../img/product1.jpg";
+import product2 from "../../img/productWanita/Poliester Jaket Krem Sogetto (L)/product2.jpg";
+import product3 from "../../img/productWanita/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
+import product4 from "../../img/productWanita/Crewneck Hanes Herway Katun Abu-Abu (XL 65rb)/product4.jpg";
+import product5 from "../../img/productWanita/Fleece Sweater Biru (XL 90rb)/product5.jpg";
+import product6 from "../../img/productWanita/Poliester Wol Kemeja Coklat (S 50rb)/product6.jpg";
+import product7 from "../../img/productPria/Jaket ATHLEISURE Putih Kain Despo L 85rb/product1.jpeg";
+import product8 from "../../img/productPria/Kemeja Kotak Hitam Garis Putih Lengan Pendek Oversize M 80rb/product2.jpeg";
+import product9 from "../../img/productPria/Sweater Simple But Significant Soft Colours M 105rb/product3.jpeg";
 import React from "react";
 import pria from "../../img/pria.png";
 import wanita from "../../img/wanita.png";
@@ -71,7 +79,7 @@ function Home_Page() {
         </div>
         <h1 className="text-3xl font-bold text-center mb-8">Produk Kami</h1>
         <h1 className="text-xl font-bold ml-7">Pakaian Wanita</h1>
-        <div className="w-full h-[420px]">
+        <div className="w-full h-[440px]">
           <Swiper
             slidesPerView={4}
             spaceBetween={10}
@@ -81,111 +89,111 @@ function Home_Page() {
           >
             <SwiperSlide>
               <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
                       src={product1}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left ">
                     <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 65.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail2">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product2}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Poliester Jaket Krem Sogetto</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 100.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail3">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product3}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Poliester Kyuck Goo Jaket Putih</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 100.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail4">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product4}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Crewneck Hanes Herway Katun Abu-Abu</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 65.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail5">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product5}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Fleece Sweater Biru</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 90.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail6">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product6}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Poliester Wol Kemeja Coklat</p>
                   </div>
                   <div className="flex justify-between">
                     <p className="font-bold">Rp. 50.000</p>
@@ -196,7 +204,7 @@ function Home_Page() {
           </Swiper>
         </div>
         <h1 className="text-xl font-bold ml-7">Pakaian Pria</h1>
-        <div className="w-full h-[420px]">
+        <div className="w-full h-[440px]">
           <Swiper
             slidesPerView={4}
             spaceBetween={10}
@@ -205,115 +213,115 @@ function Home_Page() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail7">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product7}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Jaket ATHLEISURE Putih Kain Despo</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 85.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail8">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product8}
                       alt=""
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Kemeja Kotak Hitam Garis Putih Lengan Pendek</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 80.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail9">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product9}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Sweater Simple But Significant Soft Colours</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 105.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail7">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product7}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Jaket ATHLEISURE Putih Kain Despo</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 85.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail8">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product8}
                       alt=""
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Kemeja Kotak Hitam Garis Putih Lengan Pendek</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 80.000</p>
                   </div>
                 </div>
               </NavLink>
             </SwiperSlide>
             <SwiperSlide>
-              <NavLink to="/productDetail">
-                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-fit w-[276px] p-4">
+              <NavLink to="/productDetail9">
+                <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
-                      src={product1}
+                      src={product9}
                       alt=""
-                      className="object-cover w-full h-full"
+                      className="object-cover w-60 h-60"
                     />
                   </div>
                   <div className="mt-4 text-left">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
+                    <p>Sweater Simple But Significant Soft Colours</p>
                   </div>
                   <div className="flex justify-between">
-                    <p className="font-bold">Rp. 50.000</p>
+                    <p className="font-bold">Rp. 105.000</p>
                   </div>
                 </div>
               </NavLink>
