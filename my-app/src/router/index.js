@@ -31,6 +31,8 @@ import Riwayat_Pembelian from "../pages/Informasi_Akun/Riwayat_Pembelian";
 import Riwayat_Pemesanan from "../pages/Informasi_Akun/Riwayat_Pemesanan";
 import Ubah_Informasi_Akun from "../pages/Informasi_Akun/Ubah_Informasi_Akun";
 import Login from "../pages/Login";
+import Product_Pria from "../pages/Product/Product_Pria";
+import Semua_Product_Pria from "../pages/Product/Product_Pria/List_Product/Semua_Product_Pria";
 import Product_Wanita from "../pages/Product/Product_Wanita";
 import Semua_Product_Wanita from "../pages/Product/Product_Wanita/List_Product/Semua_Product_Wanita";
 import Semua_Product from "../pages/Product/Product_Wanita/List_Product/Semua_Product_Wanita";
@@ -81,6 +83,11 @@ function router() {
         <Route path="/" element={<LayoutUser />}>
           <Route element={<Product_Wanita />} path={"/productWanita"}>
             <Route element={<Semua_Product_Wanita />} path={"/productWanita"} />
+          </Route>
+        </Route>
+        <Route path="/" element={<LayoutUser />}>
+          <Route element={<Product_Pria />} path={"/productPria"}>
+            <Route element={<Semua_Product_Pria />} path={"/productPria"} />
           </Route>
         </Route>
         <Route path="/" element={<LayoutUser />}>

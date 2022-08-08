@@ -22,6 +22,9 @@ import Product_Detail6 from "../pages/Product_Detail/Product_Detail6";
 import Product_Detail5 from "../pages/Product_Detail/Product_Detail5";
 import Product_Detail4 from "../pages/Product_Detail/Product_Detail4";
 import Product_Detail3 from "../pages/Product_Detail/Product_Detail3";
+import Product_Detail9 from "../pages/Product_Detail/Product_Detail9";
+import Product_Detail8 from "../pages/Product_Detail/Product_Detail8";
+import Product_Detail7 from "../pages/Product_Detail/Product_Detail7";
 
 export const routes = [
   {
@@ -167,6 +170,30 @@ export const routes = [
     },
     exact: true,
     component: Product_Detail6,
+  },
+  {
+    name: "Product_Detail7",
+    path: () => {
+      return "/productDetail7";
+    },
+    exact: true,
+    component: Product_Detail7,
+  },
+  {
+    name: "Product_Detail8",
+    path: () => {
+      return "/productDetail8";
+    },
+    exact: true,
+    component: Product_Detail8,
+  },
+  {
+    name: "Product_Detail9",
+    path: () => {
+      return "/productDetail9";
+    },
+    exact: true,
+    component: Product_Detail9,
   },
   {
     name: "FAQ",

@@ -260,52 +260,47 @@ function Product_Wanita() {
           </div>
           <div className="w-[872px] ">
             <div className="flex justify-end items-center h-12 mb-7">
-              <Dropdown color="blue" />
+              <Dropdown color="" />
             </div>
             <div>
               <Outlet />
             </div>
             <div className="flex items-center justify-center bg-white h-12 my-7">
               <div class="flex justify-center">
-                <nav aria-label="Page navigation example">
-                  <ul class="flex list-style-none">
-                    <li class="page-item disabled">
-                      <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-500 pointer-events-none focus:shadow-none"
-                        href="#"
-                        tabindex="-1"
-                        aria-disabled="true"
-                      >
+                <nav>
+                  <ul class="flex">
+                    <li class="">
+                      <a class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-500 ">
                         Previous
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-[#d0cba0] transition-all duration-300 rounded text-white hover:white hover:[#d0cba0] shadow-md "
                         href="#"
                       >
                         1
                       </a>
                     </li>
-                    <li class="page-item active">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-[#d0cba0] outline-none transition-all duration-300 rounded text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 "
                         href="#"
                       >
-                        2 <span class="visually-hidden"></span>
+                        2
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 "
                         href="#"
                       >
                         3
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200"
                         href="#"
                       >
                         Next
