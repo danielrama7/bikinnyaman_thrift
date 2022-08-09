@@ -27,7 +27,7 @@ function Tambah_Product() {
     formData.append("harga", data.harga);
     formData.append("kategori", data.kategori);
     formData.append("ukuran", data.ukuran);
-    formData.append("warna", data.harga);
+    formData.append("warna", data.warna);
     formData.append("stok", data.stok);
     formData.append(
       "gambarUtama",
