@@ -115,7 +115,7 @@ function Product_Detail5() {
             <h1 className="font-bold text-2xl mb-2">Produk Lainnya</h1>
           </div>
           <div className="flex justify-between">
-            <NavLink to="/productDetail" className="w-1/4">
+            <NavLink to="/productDetail1" className="w-1/4">
               <div className="hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[360px] w-full p-4">
                 <div className="h-60">
                   <img

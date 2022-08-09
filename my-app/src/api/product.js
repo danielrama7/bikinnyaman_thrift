@@ -7,6 +7,9 @@ const productAPI = {
   getAllBarang() {
     return Api.get(`/product/getAllBarang`);
   },
+  getBarangWanita() {
+    return Api.get(`/product/getBarangWanita`);
+  },
   getDetailBarang(idBarang) {
     return Api.get(`/product/getDetailBarang/${idBarang}`);
   },

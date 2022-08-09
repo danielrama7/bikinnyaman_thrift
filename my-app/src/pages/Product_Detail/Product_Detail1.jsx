@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { NavLink } from "react-router-dom";
 import product1 from "../../img/product1.jpg";
@@ -12,8 +12,6 @@ import productLainnya2 from "../../img/productWanita/Poliester Kyuck Goo Jaket P
 import productLainnya3 from "../../img/productWanita/Crewneck Hanes Herway Katun Abu-Abu (XL 65rb)/product4.jpg";
 import productLainnya4 from "../../img/productWanita/Fleece Sweater Biru (XL 90rb)/product5.jpg";
 import { UserContext } from "../../context/context";
-import { useLocation } from "react-router-dom";
-import productAPI from "../../api/product";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,57 +20,14 @@ import "./style.css";
 
 import { Navigation } from "swiper";
 
-function Product_Detail() {
-  const kodeWarna = (namaWarna) => {
-    if (namaWarna == "Putih") {
-      return "bg-white";
-    }
-    if (namaWarna === "Krem") {
-      return "bg-[#e6e3d3]";
-    }
-    if (namaWarna === "Abu") {
-      return "bg-bg-gray-500";
-    }
-    if (namaWarna === "Biru") {
-      return "bg-blue-500";
-    }
-    if (namaWarna === "Coklat") {
-      return "bg-[#964B00]";
-    }
-    if (namaWarna === "Hitam") {
-      return "bg-black";
-    }
-  };
-
-  const [detailBarang, setDetailBarang] = useState([]);
-  const location = useLocation();
-
-  useEffect(() => {
-    const fetchDetailBarang = async () => {
-      const res = await productAPI.getDetailBarang(location.state.id);
-      setDetailBarang(res.data.data);
-    };
-    fetchDetailBarang();
-  }, [location.state.id]);
-
-  const miniImg = [
-    detailBarang.gambarUtama,
-    detailBarang.gambar1 ? detailBarang.gambar1 : null,
-    detailBarang.gambar2 ? detailBarang.gambar2 : null,
-    detailBarang.gambar3 ? detailBarang.gambar3 : null,
-    detailBarang.gambar4 ? detailBarang.gambar4 : null,
-  ];
-
+const miniImg = [product1, product2, product3, product4, product5, product6];
+function Product_Detail1() {
+  const [activeImg, setActiveImg] = useState(product1);
   const { user, setUser } = useContext(UserContext);
 
   const handlerImg = (img) => {
     setActiveImg(img);
   };
-
-  console.log(detailBarang.gambarUtama);
-  const [activeImg, setActiveImg] = useState(detailBarang.gambarUtama);
-  console.log(activeImg);
-
   return (
     <div className="bg-[#F6F6F6]">
       <div className="flex bg-white h-[304px] items-center justify-center">
@@ -85,30 +40,33 @@ function Product_Detail() {
         <div className="flex bg-white p-8 rounded">
           <div className="w-2/5 h-[525px] pr-8">
             <img
-              src={activeImg ? activeImg : detailBarang.gambarUtama}
+              src={activeImg}
               alt=""
               className="object-cover h-full w-full rounded"
             />
           </div>
           <div className="w-3/5">
-            <p className="font-bold text-2xl mb-2">{detailBarang.namaProduk}</p>
-            <p className="font-bold text-xl mb-5">Rp. {detailBarang.harga}</p>
-            <p className="mb-5 text-sm">{detailBarang.deskripsi}</p>
+            <p className="font-bold text-2xl mb-2">
+              Sweater / Crewneck Pastel Mint Blue GAP
+            </p>
+            <p className="font-bold text-xl mb-5">Rp. 65.000</p>
+            <p className="mb-5 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              accumsan egestas elese ifend. Phasellus a felis at est bibendum
+              feugiat ut eget eni Praesent et messages in con sectetur posuere
+              dolor non.
+            </p>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Warna</p>
             </div>
             <div className="flex gap-x-4 mb-5">
-              <button
-                className={"h-8 w-8 border " + kodeWarna(detailBarang.warna)}
-              ></button>
+              <button className="h-8 w-8 bg-blue-500 border"></button>
             </div>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Ukuran</p>
             </div>
             <div className="flex gap-x-4 mb-5">
-              <button className="h-8 w-8 bg-White">
-                {detailBarang.ukuran}
-              </button>
+              <button className="h-8 w-8 bg-White">XL</button>
             </div>
             <div className="flex justify-between mb-5">
               <div className="w-full pr-4">
@@ -137,23 +95,21 @@ function Product_Detail() {
                 modules={[Navigation]}
                 className="mySwiper"
               >
-                {miniImg.map((img, i) =>
-                  img ? (
-                    <SwiperSlide>
-                      <div
-                        key={i}
-                        className="h-40 w-32 cursor-pointer"
-                        onClick={() => handlerImg(img)}
-                      >
-                        <img
-                          src={img}
-                          alt=""
-                          className="object-cover h-full w-full rounded"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ) : null
-                )}
+                {miniImg.map((img, i) => (
+                  <SwiperSlide>
+                    <div
+                      key={i}
+                      className="h-40 w-32 cursor-pointer"
+                      onClick={() => handlerImg(img)}
+                    >
+                      <img
+                        src={img}
+                        alt=""
+                        className="object-cover h-full w-full rounded"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
@@ -238,4 +194,4 @@ function Product_Detail() {
   );
 }
 
-export default Product_Detail;
+export default Product_Detail1;

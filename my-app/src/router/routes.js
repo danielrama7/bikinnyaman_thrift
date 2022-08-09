@@ -25,6 +25,7 @@ import Product_Detail3 from "../pages/Product_Detail/Product_Detail3";
 import Product_Detail9 from "../pages/Product_Detail/Product_Detail9";
 import Product_Detail8 from "../pages/Product_Detail/Product_Detail8";
 import Product_Detail7 from "../pages/Product_Detail/Product_Detail7";
+import Product_Detail1 from "../pages/Product_Detail/Product_Detail1";
 
 export const routes = [
   {
@@ -130,6 +131,14 @@ export const routes = [
     },
     exact: true,
     component: Product_Detail,
+  },
+  {
+    name: "Product_Detail1",
+    path: () => {
+      return "/productDetail1";
+    },
+    exact: true,
+    component: Product_Detail1,
   },
   {
     name: "Product_Detail2",

@@ -88,7 +88,7 @@ function Home_Page() {
             className="mySwiper1"
           >
             <SwiperSlide>
-              <NavLink to="/productDetail">
+              <NavLink to="/productDetail1">
                 <div className="rounded-md hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-500 h-[380px] w-[276px] p-4">
                   <div className="h-[244px]">
                     <img
