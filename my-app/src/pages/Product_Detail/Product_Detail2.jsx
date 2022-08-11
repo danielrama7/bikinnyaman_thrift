@@ -51,10 +51,13 @@ function Product_Detail2() {
             </p>
             <p className="font-bold text-xl mb-5">Rp. 100.000</p>
             <p className="mb-5 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              accumsan egestas elese ifend. Phasellus a felis at est bibendum
-              feugiat ut eget eni Praesent et messages in con sectetur posuere
-              dolor non.
+              Bahan : Poliester <br />
+              Uk : L - XL Lingkar Dada : 102 cm Panjang Baju : 70 cm <br />
+              (-) Kancing leher kurang 1 <br />
+              (+) Bonus kancing baju diameter 2 cm (tidak untuk kancing leher
+              dan kancing lengan) <br />
+              (+) Bahannya adem 💞 GOOD CONDITION 💞 🍀 ✨ Sudah dilaundry, siap
+              pakai
             </p>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Warna</p>

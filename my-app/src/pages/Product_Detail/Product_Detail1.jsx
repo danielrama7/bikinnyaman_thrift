@@ -51,10 +51,11 @@ function Product_Detail1() {
             </p>
             <p className="font-bold text-xl mb-5">Rp. 65.000</p>
             <p className="mb-5 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              accumsan egestas elese ifend. Phasellus a felis at est bibendum
-              feugiat ut eget eni Praesent et messages in con sectetur posuere
-              dolor non.
+              Brand : GAP <br /> Bahan : 94% Poliester, 6% Spandex <br />
+              Uk : XL Lingkar Dada : 53 cm Panjang Baju depan : 65 cm Panjang
+              baju belakang :67 cm <br />
+              (+) Bahannya tebel, adem, lembut 💞 GOOD CONDITION 💞 🍀 ✨ Sudah
+              dilaundry, siap pakai
             </p>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Warna</p>

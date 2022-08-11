@@ -47,10 +47,11 @@ function Product_Detail5() {
             <p className="font-bold text-2xl mb-2">Fleece Sweater Biru</p>
             <p className="font-bold text-xl mb-5">Rp. 90.000</p>
             <p className="mb-5 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              accumsan egestas elese ifend. Phasellus a felis at est bibendum
-              feugiat ut eget eni Praesent et messages in con sectetur posuere
-              dolor non.
+              Bahan : Fleece <br /> Uk : XL Lingkar Dada : 128 cm Panjang Baju :
+              Depan 62 cm Belakang 71 cm <br />
+              (+) Oversize, <br />
+              bahannya lembut & nyaman 💞 GOOD CONDITION 💞 🍀 ✨ Sudah
+              dilaundry, siap pakai
             </p>
             <div>
               <p className="font-bold text-lg mr-5 mb-2">Warna</p>
