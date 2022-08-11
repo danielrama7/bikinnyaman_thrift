@@ -5,6 +5,7 @@ import Image2 from "../../../img/carousel2.png";
 import Image3 from "../../../img/carousel3.png";
 import Edit_Carousel_Popup from "../../../components/Admin_Popup/Carousel/Edit_Carousel_Popup";
 import Tambah_Carousel_Popup from "../../../components/Admin_Popup/Carousel/Tambah_Carousel_Popup";
+import Edit_Carousel_Popup2 from "../../../components/Admin_Popup/Carousel/Edit_Carousel_Popup2";
 
 const dataCarousel = [
   {
@@ -15,14 +16,38 @@ const dataCarousel = [
     img: Image2,
     nama: "Voucher",
   },
-  {
-    img: Image3,
-    nama: "Informasi",
-  },
 ];
 
 function Carousel() {
   const [data, setData] = useState(dataCarousel);
+  const [tambahCarousel, setTambahCarousel] = useState(false);
+
+  const handleTambahCarousel = (close) => {
+    setTambahCarousel(true);
+    close();
+  };
+
+  const handleEditCarousel = (i, close) => {
+    const newData = [...dataCarousel];
+    newData[i] = {
+      ...newData[i],
+      nama: "Promo",
+    };
+
+    setData(newData);
+    close();
+  };
+
+  const handleDelete = (i) => {
+    const newData = [...dataCarousel];
+    newData[i] = {
+      ...newData[i],
+      Img: null,
+      nama: null,
+    };
+
+    setData(newData);
+  };
 
   return (
     <div className="">
@@ -38,7 +63,7 @@ function Carousel() {
               </button>
             }
           >
-            {(close) => Tambah_Carousel_Popup(close)}
+            {(close) => Tambah_Carousel_Popup(close, { handleTambahCarousel })}
           </Popup>
         </div>
         <div>
@@ -52,21 +77,97 @@ function Carousel() {
               </tr>
             </thead>
             <tbody>
-              {data.map((item, i) => (
+              {data.map((item, i) =>
+                item.nama ? (
+                  <tr className="text-sm">
+                    <td className="border">
+                      <div className="p-2">
+                        <p>{i + 1}</p>
+                      </div>
+                    </td>
+                    <td className="border">
+                      <div className="p-2 flex justify-center">
+                        <img
+                          src={item.img}
+                          alt=""
+                          className="object-fit h-20"
+                        />
+                      </div>
+                    </td>
+                    <td className="border">
+                      <div className="p-2">
+                        <p>{item.nama}</p>
+                      </div>
+                    </td>
+                    <td className="border">
+                      <div className="p-2 flex items-center gap-1">
+                        <Popup
+                          trigger={
+                            <div className="cursor-pointer">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-5 w-5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                                <path
+                                  fillRule="evenodd"
+                                  d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                          }
+                        >
+                          {(close) =>
+                            Edit_Carousel_Popup(
+                              item.nama,
+                              close,
+                              {
+                                handleEditCarousel,
+                              },
+                              i
+                            )
+                          }
+                        </Popup>
+                        <div
+                          className="cursor-pointer"
+                          onClick={() => handleDelete(i)}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                ) : null
+              )}
+              {tambahCarousel ? (
                 <tr className="text-sm">
                   <td className="border">
                     <div className="p-2">
-                      <p>{i + 1}</p>
+                      <p>3</p>
                     </div>
                   </td>
                   <td className="border">
                     <div className="p-2 flex justify-center">
-                      <img src={item.img} alt="" className="object-fit h-20" />
+                      <img src={Image3} alt="" className="object-fit h-20" />
                     </div>
                   </td>
                   <td className="border">
                     <div className="p-2">
-                      <p>{item.nama}</p>
+                      <p>Informasi</p>
                     </div>
                   </td>
                   <td className="border">
@@ -90,7 +191,7 @@ function Carousel() {
                           </div>
                         }
                       >
-                        {(close) => Edit_Carousel_Popup(item.nama, close)}
+                        {(close) => Edit_Carousel_Popup2("Informasi", close)}
                       </Popup>
                       <div>
                         <svg
@@ -109,7 +210,7 @@ function Carousel() {
                     </div>
                   </td>
                 </tr>
-              ))}
+              ) : null}
             </tbody>
           </table>
         </div>

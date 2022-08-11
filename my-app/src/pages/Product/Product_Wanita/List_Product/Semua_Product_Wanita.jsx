@@ -53,7 +53,7 @@ function Semua_Product_Wanita() {
             <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 65.000</p>
+            <p className="font-bold">Rp. 65000</p>
           </div>
         </div>
       </NavLink>
@@ -66,7 +66,7 @@ function Semua_Product_Wanita() {
             <p>Poliester Jaket Krem Sogetto </p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 100.000</p>
+            <p className="font-bold">Rp. 100000</p>
           </div>
         </div>
       </NavLink>
@@ -79,7 +79,7 @@ function Semua_Product_Wanita() {
             <p>Poliester Kyuck Goo Jaket Putih </p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 100.000</p>
+            <p className="font-bold">Rp. 100000</p>
           </div>
         </div>
       </NavLink>
@@ -92,7 +92,7 @@ function Semua_Product_Wanita() {
             <p>Crewneck Hanes Herway Katun Abu-Abu</p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 65.000</p>
+            <p className="font-bold">Rp. 65000</p>
           </div>
         </div>
       </NavLink>
@@ -105,7 +105,7 @@ function Semua_Product_Wanita() {
             <p>Fleece Sweater Biru</p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 90.000</p>
+            <p className="font-bold">Rp. 90000</p>
           </div>
         </div>
       </NavLink>
@@ -118,7 +118,7 @@ function Semua_Product_Wanita() {
             <p>Poliester Wol Kemeja Coklat</p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 50.000</p>
+            <p className="font-bold">Rp. 50000</p>
           </div>
         </div>
       </NavLink>

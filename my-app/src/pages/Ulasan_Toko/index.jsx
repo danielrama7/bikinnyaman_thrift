@@ -22,35 +22,35 @@ function Ulasan_Toko() {
             <div>
               <Link to={"/ulasanToko/ulasan5"}>
                 <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
-                  5 Bintang (3)
+                  5 Bintang (1)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan4"}>
                 <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
-                  4 Bintang (3)
+                  4 Bintang (1)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan3"}>
                 <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
-                  3 Bintang (3)
+                  3 Bintang (1)
                 </button>
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan2"}>
                 <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
-                  2 Bintang (3)
+                  2 Bintang (1)
                 </button>{" "}
               </Link>
             </div>
             <div>
               <Link to={"/ulasanToko/ulasan1"}>
                 <button className="w-full p-2 hover:bg-[#d0cba0] duration-500 hover:font-bold hover:text-white">
-                  1 Bintang (3)
+                  1 Bintang (1)
                 </button>
               </Link>
             </div>

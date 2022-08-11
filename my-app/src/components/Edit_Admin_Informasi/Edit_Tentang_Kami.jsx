@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const dataTentangKami =
   "Bikinnyaman_thrift adalah e-commerce yang menjual berbagai jenis pakaian second hand layak pakai yang akan membuat penampilan para wanita dan pria lebih bergaya. \n\nProduk-produk yang kami tawarkan tentunya mempertimbangkan kebutuhan dari wanita dan pria mengikuti fashion terkini. Serta ditawarkan dengan harga yang terjangkau. \n\nDaftarkan email anda sekarang dan follow media sosial Bikinnyamam_thrift untuk menjadi yang pertama mendapatkan info mengenai produk terbaru dan promo lainnya.";
@@ -24,9 +25,11 @@ function Edit_Tentang_Kami() {
               ></textarea>
             </div>
             <div>
-              <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
-                Simpan
-              </button>
+              <NavLink to={"/admin/informasi"}>
+                <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
+                  Simpan
+                </button>
+              </NavLink>
             </div>
           </div>
         </form>

@@ -2,7 +2,12 @@ import Popup from "reactjs-popup";
 import React, { useState } from "react";
 import "./style.css";
 
-export default function Edit_Carousel_Popup(ph, close) {
+export default function Edit_Carousel_Popup(
+  ph,
+  close,
+  { handleEditCarousel },
+  i
+) {
   return (
     <div className="modalAdmin">
       <div className="bg-white border border-gray-400 rounded-md p-4 w-[450px]">
@@ -56,7 +61,10 @@ export default function Edit_Carousel_Popup(ph, close) {
           </div>
         </div>
         <div>
-          <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
+          <button
+            onClick={() => handleEditCarousel(i, close)}
+            className="rounded w-full text-white font-bold bg-[#d0cba0] p-2"
+          >
             Edit Carousel
           </button>
         </div>

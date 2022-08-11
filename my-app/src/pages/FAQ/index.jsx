@@ -59,7 +59,7 @@ function FAQ() {
                 />
               </div>
             </div>
-            <NavLink to="/faq">
+            <NavLink to="/homePage">
               <div className="flex w-full justify-end">
                 <button className="bg-[#d0cba0] rounded font-bold text-white p-1 w-5/6">
                   Kirim

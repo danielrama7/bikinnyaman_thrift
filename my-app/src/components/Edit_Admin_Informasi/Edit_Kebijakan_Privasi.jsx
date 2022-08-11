@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const dataKebijakanPrivasi =
   "Kami sungguh menghormati privasi Anda sebagaimana dijelaskan dalam syarat dan ketentuan. Segala informasi yang kami butuhkan diperuntukkan untuk menjalankan layanan kepada Anda dengan sebaik-baiknya.\n\nUntuk mendapatkan layanan, Anda mungkin diminta untuk membuat akun serta password untuk akun Anda. Kami sangat berharap Anda dapat menjaga kerahasiaan password setiap saat. Kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari hilangnya password.\n\nInformasi yang telah diserahkan kepada kami akan dijaga sebagaimana mestinya. Tindakan Anda yang membuat privasi Anda terbuka untuk umum adalah tanggung jawab Anda.";
@@ -24,9 +25,11 @@ function Edit_Kebijakan_Privasi() {
               ></textarea>
             </div>
             <div>
-              <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
-                Simpan
-              </button>
+              <NavLink to={"/admin/informasi"}>
+                <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
+                  Simpan
+                </button>
+              </NavLink>
             </div>
           </div>
         </form>

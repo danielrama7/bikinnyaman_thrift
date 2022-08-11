@@ -23,6 +23,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Nama Lengkap"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Putra"}
               />
             </div>
           </div>
@@ -35,6 +36,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Alamat"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Jalan Asep Berlian No.31"}
               />
             </div>
           </div>
@@ -47,6 +49,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Provinsi"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Jawa Barat"}
               />
             </div>
           </div>
@@ -59,6 +62,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Kabupaten/Kota"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Kota Bandung"}
               />
             </div>
           </div>
@@ -71,6 +75,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Kecamatan"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Cibeunying Kidul"}
               />
             </div>
           </div>
@@ -83,6 +88,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Kelurahan"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"Cicadas"}
               />
             </div>
           </div>
@@ -95,6 +101,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="Kode Pos"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"40121"}
               />
             </div>
           </div>
@@ -107,6 +114,7 @@ function Informasi_Pembelian() {
                 type="text"
                 placeholder="No. Telepon"
                 className="placeholder:text-slate-400 px-2"
+                defaultValue={"081234567899"}
               />
             </div>
           </div>
@@ -128,6 +136,7 @@ function Informasi_Pembelian() {
               id="jnt"
               name="pengiriman"
               className="mr-2 cursor-pointer w-4 h-4 "
+              checked="checked"
             />
             <label htmlFor="jnt" className="cursor-pointer">
               JNT
@@ -140,6 +149,7 @@ function Informasi_Pembelian() {
               id="bni"
               name="pembayaran"
               className="mr-2 cursor-pointer w-4 h-4 "
+              checked="checked"
             />
             <label htmlFor="bni" className="cursor-pointer">
               BNI Virtual Account

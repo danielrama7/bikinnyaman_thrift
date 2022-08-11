@@ -1,5 +1,7 @@
 import React from "react";
 import product1 from "../../img/product1.jpg";
+import product2 from "../../img/productWanita/Crewneck Hanes Herway Katun Abu-Abu (XL 65rb)/product4.jpg";
+import product3 from "../../img/productWanita/Poliester Wol Kemeja Coklat (S 50rb)/product6.jpg";
 import { Rating } from "react-simple-star-rating";
 
 function Semua_Ulasan() {
@@ -38,12 +40,12 @@ function Semua_Ulasan() {
       </div>
       <div className="flex mb-8">
         <div className="w-28 h-28 mr-6">
-          <img src={product1} alt="" className="object-cover h-full w-full" />
+          <img src={product2} alt="" className="object-cover h-full w-full" />
         </div>
         <div className="grid grow">
           <div>
             <h1 className="font-bold text-xl">
-              Sweater / Crewneck Pastel Mint Blue GAP
+              Crewneck Hanes Herway Katun Abu-Abu
             </h1>
           </div>
           <div>
@@ -66,13 +68,11 @@ function Semua_Ulasan() {
       </div>
       <div className="flex mb-8">
         <div className="w-28 h-28 mr-6">
-          <img src={product1} alt="" className="object-cover h-full w-full" />
+          <img src={product3} alt="" className="object-cover h-full w-full" />
         </div>
         <div className="grid grow">
           <div>
-            <h1 className="font-bold text-xl">
-              Sweater / Crewneck Pastel Mint Blue GAP
-            </h1>
+            <h1 className="font-bold text-xl">Poliester Wol Kemeja Coklat</h1>
           </div>
           <div>
             <Rating size={23} initialValue={3} readonly={true} />
@@ -93,54 +93,25 @@ function Semua_Ulasan() {
         </div>
       </div>
       {/* Pagination */}
-      <div className="flex items-center justify-center bg-white h-12">
-        <div class="flex justify-center">
-          <nav aria-label="Page navigation example">
-            <ul class="flex list-style-none">
-              <li class="page-item disabled">
-                <a
-                  class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-500 pointer-events-none focus:shadow-none"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  Previous
-                </a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                  href="#"
-                >
-                  1
-                </a>
-              </li>
-              <li class="page-item active">
-                <a
-                  class="page-link relative block py-1.5 px-3 rounded border-0 bg-[#d0cba0] outline-none transition-all duration-300 rounded text-white hover:text-white shadow-md focus:shadow-md"
-                  href="#"
-                >
-                  2 <span class="visually-hidden"></span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                  href="#"
-                >
-                  3
-                </a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                  href="#"
-                >
-                  Next
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <div className="flex items-center justify-center">
+        <div className="flex justify-center">
+          <ul className="flex ">
+            <li>
+              <a className="relative block py-1.5 px-3 border-0 bg-transparent transition-all duration-300 rounded text-gray-500 cursor-pointer">
+                Previous
+              </a>
+            </li>
+            <li>
+              <a class="relative block py-1.5 px-3 bg-[#d0cba0] transition-all duration-300 rounded text-white hover:hover:bg-[#d0cba0] cursor-pointer">
+                1
+              </a>
+            </li>
+            <li>
+              <a class="relative block py-1.5 px-3 bg-transparent transition-all duration-300 rounded text-gray-800 hover:bg-gray-200 cursor-pointer">
+                Next
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

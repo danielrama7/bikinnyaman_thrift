@@ -49,7 +49,10 @@ export default function Edit_FAQ_Popup(ph1, ph2, close) {
           ></textarea>
         </div>
         <div>
-          <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2 mt-4">
+          <button
+            onClick={close}
+            className="rounded w-full text-white font-bold bg-[#d0cba0] p-2 mt-4"
+          >
             Edit FAQ
           </button>
         </div>

@@ -16,7 +16,7 @@ function Product_Wanita() {
             <div className="flex items-center h-12 font-bold text-3xl mb-7">
               PAKAIAN WANITA
             </div>
-            <div className="bg-white h-56 mb-7 px-5">
+            <div className="bg-white h-fit pb-2 mb-7 px-5">
               <div className="flex items-center bg-white h-12 font-bold">
                 KATEGORI
               </div>
@@ -58,7 +58,7 @@ function Product_Wanita() {
                     htmlFor="outer"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    outer
+                    sweater
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -71,25 +71,12 @@ function Product_Wanita() {
                     htmlFor="celana"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    celana
-                  </label>
-                </div>
-                <div className="mb-2 flex items-center">
-                  <input
-                    type="checkbox"
-                    id="rok"
-                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
-                  />
-                  <label
-                    htmlFor="rok"
-                    className="cursor-pointer  hover:text-[#d0cba0]"
-                  >
-                    rok
+                    jaket
                   </label>
                 </div>
               </div>
             </div>
-            <div className="bg-white h-72 mb-7 px-5">
+            <div className="bg-white h-fit pb-2 mb-7 px-5">
               <div className="flex items-center h-12 font-bold">WARNA</div>
               <hr />
               <div>
@@ -116,7 +103,7 @@ function Product_Wanita() {
                     htmlFor="hitam"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    hitam
+                    krem
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -142,7 +129,7 @@ function Product_Wanita() {
                     htmlFor="merah"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    merah
+                    biru
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -155,7 +142,7 @@ function Product_Wanita() {
                     htmlFor="biru"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    biru
+                    coklat
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -168,25 +155,12 @@ function Product_Wanita() {
                     htmlFor="hijau"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    hijau
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="checkbox"
-                    id="kuning"
-                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
-                  />
-                  <label
-                    htmlFor="kuning"
-                    className="cursor-pointer  hover:text-[#d0cba0]"
-                  >
-                    kuning
+                    hitam
                   </label>
                 </div>
               </div>
             </div>
-            <div className="bg-white h-56 px-5">
+            <div className="bg-white h-fit pb-2 px-5">
               <div className="flex items-center h-12 font-bold">UKURAN</div>
               <hr />
               <div>

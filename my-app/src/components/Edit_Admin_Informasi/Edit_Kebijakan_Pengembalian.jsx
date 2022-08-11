@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const dataKebijakanPengembalian =
   "Pengembalian produk dapat dilakukan dengan langsung menghubungi pihak kamu melalui WhatsApp kami.\n\nBeberapa ketentuan pengembalian produk:\n\n1. Periode pengembalian produk maksimal H+3 setelah barang sampai.\n2. Produk yang telah dicuci, dirubah, kondisi tidak sesuai saat pembelian (rusak/bernoda) tidak dapat dikembalikan.\n3. Jasa pengiriman pengembalian produk ditanggung oleh pembeli.\n4. Dana akan dikembalikan setelah produk sampai dan sudah dicek kondisinya oleh pihak kami.";
@@ -24,9 +25,11 @@ function Edit_Kebijakan_Pengembalian() {
               ></textarea>
             </div>
             <div>
-              <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
-                Simpan
-              </button>
+              <NavLink to={"/admin/informasi"}>
+                <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
+                  Simpan
+                </button>
+              </NavLink>
             </div>
           </div>
         </form>

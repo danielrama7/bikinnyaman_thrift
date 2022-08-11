@@ -1,11 +1,50 @@
 import React from "react";
 import product1 from "../../../img/product1.jpg";
-import product2 from "../../../img/productWanita/Poliester Jaket Krem Sogetto (L)/product2.jpg";
-import product3 from "../../../img/productWanita/Poliester Kyuck Goo Jaket Putih (L)/product3.jpg";
 import Dropdown from "./dropdown";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import { useState } from "react";
 
 function Hasil_Pencarian() {
+  const [p1, setP1] = useState(true);
+  const [p2, setP2] = useState(true);
+  const [filter, setFilter] = useState(false);
+  const [filterP1, setFilterP1] = useState(false);
+  const [filterP2, setFilterP2] = useState(false);
+
+  const handleChangeP1 = (event) => {
+    if (event.target.checked) {
+      setP1(true);
+      setFilter(true);
+      setFilterP1(true);
+    } else if (filter == false) {
+      setP1(true);
+    } else if (filterP2 == false) {
+      setFilter(false);
+      setP1(true);
+      setFilterP1(false);
+    } else {
+      setFilterP1(false);
+      setP1(false);
+    }
+  };
+
+  const handleChangeP2 = (event) => {
+    if (event.target.checked) {
+      setP2(true);
+      setFilter(true);
+      setFilterP2(true);
+    } else if (filter == false) {
+      setP2(true);
+    } else if (filterP1 == false) {
+      setFilter(false);
+      setP2(true);
+      setFilterP2(false);
+    } else {
+      setFilterP2(false);
+      setP2(false);
+    }
+  };
+
   return (
     <div className="bg-[#F6F6F6]">
       <div className="flex bg-white h-[304px] items-center justify-center">
@@ -16,9 +55,9 @@ function Hasil_Pencarian() {
         <div className="flex space-x-7">
           <div className="w-[270px]">
             <div className="flex items-center h-12 font-bold text-3xl mb-7">
-              HASIL PENCARIAN
+              HASIL PENCARIAN "SWEATER"
             </div>
-            <div className="bg-white h-56 mb-7 px-5">
+            <div className="bg-white h-fit pb-2 mb-7 px-5">
               <div className="flex items-center bg-white h-12 font-bold">
                 KATEGORI
               </div>
@@ -60,7 +99,7 @@ function Hasil_Pencarian() {
                     htmlFor="outer"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    outer
+                    sweater
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -73,25 +112,12 @@ function Hasil_Pencarian() {
                     htmlFor="celana"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    celana
-                  </label>
-                </div>
-                <div className="mb-2 flex items-center">
-                  <input
-                    type="checkbox"
-                    id="rok"
-                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
-                  />
-                  <label
-                    htmlFor="rok"
-                    className="cursor-pointer  hover:text-[#d0cba0]"
-                  >
-                    rok
+                    jaket
                   </label>
                 </div>
               </div>
             </div>
-            <div className="bg-white h-72 mb-7 px-5">
+            <div className="bg-white h-fit pb-2 mb-7 px-5">
               <div className="flex items-center h-12 font-bold">WARNA</div>
               <hr />
               <div>
@@ -110,6 +136,7 @@ function Hasil_Pencarian() {
                 </div>
                 <div className="mb-2 flex items-center">
                   <input
+                    onClick={handleChangeP1}
                     type="checkbox"
                     id="hitam"
                     className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
@@ -118,7 +145,7 @@ function Hasil_Pencarian() {
                     htmlFor="hitam"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    hitam
+                    krem
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -136,6 +163,7 @@ function Hasil_Pencarian() {
                 </div>
                 <div className="mb-2 flex items-center">
                   <input
+                    onChange={handleChangeP2}
                     type="checkbox"
                     id="merah"
                     className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
@@ -144,7 +172,7 @@ function Hasil_Pencarian() {
                     htmlFor="merah"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    merah
+                    biru
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -157,7 +185,7 @@ function Hasil_Pencarian() {
                     htmlFor="biru"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    biru
+                    coklat
                   </label>
                 </div>
                 <div className="mb-2 flex items-center">
@@ -170,25 +198,12 @@ function Hasil_Pencarian() {
                     htmlFor="hijau"
                     className="cursor-pointer  hover:text-[#d0cba0]"
                   >
-                    hijau
-                  </label>
-                </div>
-                <div className="flex items-center">
-                  <input
-                    type="checkbox"
-                    id="kuning"
-                    className="mr-2 cursor-pointer accent-[#d0cba0] w-4 h-4 "
-                  />
-                  <label
-                    htmlFor="kuning"
-                    className="cursor-pointer  hover:text-[#d0cba0]"
-                  >
-                    kuning
+                    hitam
                   </label>
                 </div>
               </div>
             </div>
-            <div className="bg-white h-56 px-5">
+            <div className="bg-white h-fit pb-2 px-5">
               <div className="flex items-center h-12 font-bold">UKURAN</div>
               <hr />
               <div>
@@ -260,170 +275,49 @@ function Hasil_Pencarian() {
               </div>
             </div>
           </div>
-          <div className="w-[872px]">
+          <div className="w-[872px] ">
             <div className="flex justify-end items-center h-12 mb-7">
-              <Dropdown color="blue" />
+              <Dropdown color="" />
             </div>
-            <div className="grid grid-cols-3 gap-7">
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="/productDetail">
-                <div className="bg-white hover:shadow-[3px_10px_35px_-5px_rgba(0,0,0,0.2)] duration-700 w-[272px] p-4">
-                  <div className="h-64">
-                    <img src={product1} alt="" className="object-cover" />
-                  </div>
-                  <div className="">
-                    <p>Sweater / Crewneck Pastel Mint Blue GAP</p>
-                  </div>
-                  <div className="flex justify-between ">
-                    <p className="font-bold">Rp. 50.000</p>
-                  </div>
-                </div>
-              </NavLink>
+            <div>
+              <Outlet context={{ p1, p2 }} />
             </div>
             <div className="flex items-center justify-center bg-white h-12 my-7">
               <div class="flex justify-center">
-                <nav aria-label="Page navigation example">
-                  <ul class="flex list-style-none">
-                    <li class="page-item disabled">
-                      <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-500 pointer-events-none focus:shadow-none"
-                        href="#"
-                        tabindex="-1"
-                        aria-disabled="true"
-                      >
+                <nav>
+                  <ul class="flex">
+                    <li class="">
+                      <a class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-500 ">
                         Previous
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-[#d0cba0] transition-all duration-300 rounded text-white hover:white hover:[#d0cba0] shadow-md "
                         href="#"
                       >
                         1
                       </a>
                     </li>
-                    <li class="page-item active">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-[#d0cba0] outline-none transition-all duration-300 rounded text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 "
                         href="#"
                       >
-                        2 <span class="visually-hidden"></span>
+                        2
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 "
                         href="#"
                       >
                         3
                       </a>
                     </li>
-                    <li class="page-item">
+                    <li class="">
                       <a
-                        class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                        class="block py-1.5 px-3 rounded border-0 bg-transparent transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200"
                         href="#"
                       >
                         Next

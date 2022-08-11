@@ -13,11 +13,11 @@ function Dashboard() {
         </div>
         <div className="w-full bg-white p-6 rounded border-l-4 border-blue-500 shadow-xl">
           <h1 className="text-sm">PESANAN</h1>
-          <h1 className="text-bold text-xl">3</h1>
+          <h1 className="text-bold text-xl">1</h1>
         </div>
         <div className="w-full bg-white p-6 rounded border-l-4 border-green-500 shadow-xl">
           <h1 className="text-sm">BARANG</h1>
-          <h1 className="text-bold text-xl">20</h1>
+          <h1 className="text-bold text-xl">3</h1>
         </div>
       </div>
     </div>

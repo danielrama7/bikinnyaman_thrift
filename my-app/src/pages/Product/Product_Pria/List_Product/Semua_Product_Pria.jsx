@@ -16,7 +16,7 @@ function Semua_Product_Pria() {
             <p>Jaket ATHLEISURE Putih Kain Despo</p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 85.000</p>
+            <p className="font-bold">Rp. 85000</p>
           </div>
         </div>
       </NavLink>
@@ -29,7 +29,7 @@ function Semua_Product_Pria() {
             <p>Kemeja Kotak Hitam Garis Putih Lengan Pendek Oversize </p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 85.000</p>
+            <p className="font-bold">Rp. 85000</p>
           </div>
         </div>
       </NavLink>
@@ -42,7 +42,7 @@ function Semua_Product_Pria() {
             <p>Sweater Simple But Significant Soft Colours </p>
           </div>
           <div className="flex justify-between ">
-            <p className="font-bold">Rp. 105.000</p>
+            <p className="font-bold">Rp. 105000</p>
           </div>
         </div>
       </NavLink>

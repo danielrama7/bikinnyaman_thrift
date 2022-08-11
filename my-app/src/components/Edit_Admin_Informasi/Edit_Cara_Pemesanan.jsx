@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const dataCaraPemesanan =
   "Langkah - langkah:\n\n1. Pertama cari produk yang akan dibeli\n2. Tambahkan produk ke keranjang belanja\n3. Setelah semua produk masuk ke keranjang belanja, tekan tombol checkout\n4. Cek dan isi informasi yang dibutuhkan dalam halaman detail pembelian (alamat, metode pengiriman,dan metode pembayaran)\n5. Masukkan voucher promo (jika ada)\n6. Total harga pesanan Anda\n7. Tekan tombol buat pemesanan untuk dibuatkan pesanan sesuai pembelian Anda\n8. Konfirmasi pembayaran di halaman riwayat pemesanan\n9. Jika pembayaran telah terselesaikan, status pada riwayat pemesanan akan berubah menjadi sudah bayar.";
@@ -24,9 +25,11 @@ function Edit_Cara_Pemesanan() {
               ></textarea>
             </div>
             <div>
-              <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
-                Simpan
-              </button>
+              <NavLink to={"/admin/informasi"}>
+                <button className="rounded w-full text-white font-bold bg-[#d0cba0] p-2">
+                  Simpan
+                </button>
+              </NavLink>
             </div>
           </div>
         </form>
