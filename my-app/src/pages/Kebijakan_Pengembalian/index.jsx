@@ -8,7 +8,7 @@ function Kebijakan_Pengembalian() {
       <div className="flex bg-white h-[304px] items-center justify-center">
         <img src={product1} alt="" className="object-cover h-full w-full" />
         <h1 className="text-5xl font-bold absolute text-white">
-          Kebiajakan Pengembalian
+          Kebijakan Pengembalian
         </h1>
       </div>
       <div className="mx-28 py-16 p-3">
