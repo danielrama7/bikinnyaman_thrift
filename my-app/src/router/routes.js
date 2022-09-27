@@ -26,6 +26,8 @@ import Product_Detail9 from "../pages/Product_Detail/Product_Detail9";
 import Product_Detail8 from "../pages/Product_Detail/Product_Detail8";
 import Product_Detail7 from "../pages/Product_Detail/Product_Detail7";
 import Product_Detail1 from "../pages/Product_Detail/Product_Detail1";
+import Lupa_Password from "../pages/Login/Lupa_Password";
+import Password_Baru from "../pages/Login/Password_Baru";
 
 export const routes = [
   {
@@ -251,5 +253,21 @@ export const routes = [
     },
     exact: true,
     component: Register_Page,
+  },
+  {
+    name: "Lupa_Password",
+    path: () => {
+      return "/lupaPassword";
+    },
+    exact: true,
+    component: Lupa_Password,
+  },
+  {
+    name: "Password_Baru",
+    path: () => {
+      return "/passwordBaru";
+    },
+    exact: true,
+    component: Password_Baru,
   },
 ];

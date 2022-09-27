@@ -94,9 +94,16 @@ function Login() {
           <div>
             <p className="text-left text-red-500 text-sm">{message}</p>
           </div>
+          <div>
+            <NavLink to="/lupaPassword">
+              <p className="mt-2 text-left text-gray-500 text-sm hover:text-gray-800 w-fit cursor-pointer">
+                Lupa Password?
+              </p>
+            </NavLink>
+          </div>
           <button
             type="submit"
-            class="w-full mt-6 bg-[#282517] rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold"
+            class="w-full mt-4 bg-[#282517] rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold"
           >
             Masuk
           </button>
